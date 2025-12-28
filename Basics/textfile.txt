@@ -1,15 +1,3 @@
-
-Hello Guys, Subscribe to DartStorm , 
-Hello Guys, Welcome to the Event where 
-the Chief Guest is Thor and other guests -
-Thala , Hulk , Kohli , Dhawan , Gill , Minecraft Developer.
-1.Kohli
-2.Thala
-3.Thor
-4.IronMan
-5.Hitman
-6.Krish 3
-7.Ritik Roshan 
-8.Minecraft Developer
-9.Ravaan
-10.Rockstar Games Developer
+Reads one line at a time from the file.
+Returns a single string (including the newline \n at the end, if present).
+Useful when you want to process a file line by line (memory-efficient).
