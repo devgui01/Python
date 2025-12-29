@@ -32,4 +32,3 @@ def Game(userinput):
 
 print(Game(userinput = input(f"R - Rock\nP - Paper\nS - Scissor\nChoose Any of these : ").upper()))
 
-
