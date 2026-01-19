@@ -1,0 +1,1 @@
+#Command for Evaluation --> litgpt evaluate out/finetune/lora/final --tasks "mmlu_philosophy" --batch_size 4
