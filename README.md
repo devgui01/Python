@@ -1,1 +1,5 @@
-Start Coding !
+Learn:-
+Python
+LLM-from-scratch
+FastApi
+RestApi
