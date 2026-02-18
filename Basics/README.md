@@ -1,108 +1,113 @@
-# Basics Guide — Python Fundamentals
+# Basics — Python Fundamentals
 
 > Start here if you're new to Python!
 
 ---
 
-## 📋 File Index
+## 📁 Organized Structure
 
-### Getting Started
-| File | Topic |
-|------|-------|
-| `addition.py` | Basic arithmetic |
-| `input_type_Check.py` | User input & type checking |
-| `user_input.py` | Input handling |
+Files are organized into **12 topic-based folders** for easy navigation:
 
-### Control Flow
-| File | Topic |
-|------|-------|
-| `if_else.py` | Conditional statements |
-| `loops.py` | For & while loops |
-| `prime_numbers_loops.py` | Loop practice |
-
-### Functions
-| File | Topic |
-|------|-------|
-| `functions.py` | Basic functions |
-| `lambda.py` | Lambda functions |
-| `map_filter_reduce.py` | Functional programming |
-
-### Data Structures
-| File | Topic |
-|------|-------|
-| `list.py` | Lists |
-| `tuple.py` | Tuples |
-| `sets.py` | Sets |
-| `dict.py` | Dictionaries |
-
-### File Handling
-| File | Topic |
-|------|-------|
-| `file_handling.py` | Read/write files |
-| `logfile_filehandling.py` | Log files |
-
-### Object-Oriented Programming
-| File | Topic |
-|------|-------|
-| `class.py` | Classes & objects |
-| `inheritance.py` | Inheritance |
-| `property_decorators.py` | Property decorators |
-| `oops_challenge.py` | OOP practice |
-
-### Error Handling
-| File | Topic |
-|------|-------|
-| `exceptions.py` | Try/except blocks |
-
-### Projects
-| File | Topic |
-|------|-------|
-| `calculator.py` | Calculator app |
-| `project_guess_the_correct_number.py` | Number guessing game |
-| `flask_web_server.py` | Simple web server |
+```
+Basics/
+├── 01_introduction/        # Your first Python programs
+├── 02_variables_types/     # Variables, types, operators
+├── 03_control_flow/        # If-else, loops, patterns
+├── 04_functions/           # Functions, recursion
+├── 05_data_structures/     # Lists, tuples, sets, dicts
+├── 06_strings/             # String operations
+├── 07_file_handling/       # Read/write files
+├── 08_oop/                 # Classes, inheritance
+├── 09_error_handling/      # Exceptions, try-except
+├── 10_advanced/            # Lambda, map/filter/reduce
+├── 11_projects/            # Games and applications
+└── 12_web/                 # Flask web examples
+```
 
 ---
 
-## 🎯 Learning Order
+## 🎯 Learning Path
 
-### Week 1: Basics
-1. `addition.py` — Run your first code
-2. `user_input.py` — Get user input
-3. `if_else.py` — Make decisions
-4. `loops.py` — Repeat actions
+### Week 1-2: Basics
+1. **01_introduction/** — Hello World, input/output
+2. **02_variables_types/** — Variables, operators, typecasting
+3. **03_control_flow/** — Conditions, loops
 
-### Week 2: Functions & Data
-1. `functions.py` — Create functions
-2. `list.py` — Store collections
-3. `dict.py` — Key-value pairs
-4. `lambda.py` — Short functions
+### Week 3-4: Core Concepts
+4. **04_functions/** — Functions, recursion
+5. **05_data_structures/** — Lists, tuples, sets, dicts
+6. **06_strings/** — String manipulation
 
-### Week 3: Advanced Topics
-1. `file_handling.py` — Work with files
-2. `class.py` — Object-oriented programming
-3. `exceptions.py` — Handle errors
-4. `map_filter_reduce.py` — Functional tools
+### Week 5-6: Advanced Topics
+7. **07_file_handling/** — File operations
+8. **08_oop/** — Object-oriented programming
+9. **09_error_handling/** — Exception handling
 
-### Week 4: Projects
-1. `calculator.py` — Build a calculator
-2. `project_guess_the_correct_number.py` — Make a game
-3. `flask_web_server.py` — Create a web server
+### Week 7-8: Mastery
+10. **10_advanced/** — Lambda, modules, advanced features
+11. **11_projects/** — Build games
+12. **12_web/** — Web development
+
+---
+
+## 📚 Quick Reference
+
+| Topic | Folder | Files |
+|-------|--------|-------|
+| First Program | `01_introduction/` | 2 |
+| Variables | `02_variables_types/` | 13 |
+| Conditions | `03_control_flow/` | 10 |
+| Functions | `04_functions/` | 11 |
+| Data Structures | `05_data_structures/` | 20 |
+| Strings | `06_strings/` | 9 |
+| Files | `07_file_handling/` | 14 |
+| OOP | `08_oop/` | 15 |
+| Errors | `09_error_handling/` | 3 |
+| Advanced | `10_advanced/` | 11 |
+| Projects | `11_projects/` | 3 |
+| Web | `12_web/` | 1 |
+
+**Total: 112 Python files**
+
+---
+
+## 🚀 How to Use
+
+1. **Start from 01_introduction/** if you're new
+2. **Read the README.md** in each folder
+3. **Run the examples** and modify them
+4. **Complete challenges** in each section
+5. **Build projects** in 11_projects/
+
+### Example
+```bash
+cd 01_introduction
+python hello_world_first.py
+
+cd ../02_variables_types
+python arithmetic_addition.py
+
+cd ../11_projects
+python game_guess_number.py
+```
 
 ---
 
 ## 💡 Tips
 
 1. **Run every file** — See what it does
-2. **Break it** — Change values and see what happens
-3. **Fix it** — Try to fix your broken code
-4. **Repeat** — Practice makes perfect
+2. **Modify values** — Break it, fix it, learn
+3. **Read comments** — Each file is explained
+4. **Practice daily** — Consistency is key
+5. **Build projects** — Apply what you learn
 
 ---
 
 ## ❓ Need Help?
 
-- Read the comments in each file
-- Check the [README.md](../README.md)
+- Check the README.md in each folder
+- Read the comments in code files
+- Review the [main README](../README.md)
 - Open an issue on GitHub
 
-Happy coding! 🐍
+Happy coding! 🐍✨

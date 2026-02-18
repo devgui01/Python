@@ -21,32 +21,51 @@ This repository is your **one-stop Python learning hub** — from complete begin
 
 ```
 Python/
-├── Basics/              # Python fundamentals (~100 files)
-├── FastAPI/             # FastAPI REST API examples
-├── RESTAPI/             # Flask + SQLAlchemy CRUD API
-├── LLM(Basics)/         # Large Language Model concepts
-│   ├── Architecture/    # Transformer, GPT from scratch
-│   ├── PRE-TRAINING/    # Model training
-│   ├── WEIGHT-LOADING/  # Load GPT-2 weights
-│   └── FINE-TUNING/     # Fine-tuning with LitGPT
-└── README.md
+├── Basics/                    # Python fundamentals (112 files, organized)
+│   ├── 01_introduction/       # First programs
+│   ├── 02_variables_types/    # Variables, operators
+│   ├── 03_control_flow/       # Conditions, loops
+│   ├── 04_functions/          # Functions, recursion
+│   ├── 05_data_structures/    # Lists, tuples, sets, dicts
+│   ├── 06_strings/            # String operations
+│   ├── 07_file_handling/      # File I/O
+│   ├── 08_oop/                # Classes, inheritance
+│   ├── 09_error_handling/     # Exceptions
+│   ├── 10_advanced/           # Lambda, modules
+│   ├── 11_projects/           # Games
+│   └── 12_web/                # Flask
+├── FastAPI/                   # FastAPI REST API
+├── RESTAPI/                   # Flask + SQLAlchemy API
+├── LLM(Basics)/               # Large Language Models
+│   ├── Architecture/          # Transformer from scratch
+│   ├── PRE-TRAINING/          # Model training
+│   ├── WEIGHT-LOADING/        # Load GPT-2 weights
+│   └── FINE-TUNING/           # Fine-tuning
+├── APIs/                      # API documentation
+├── CONTRIBUTING.md            # Contribution guide
+└── README.md                  # This file
 ```
 
 ---
 
 ## 🗂️ Topics Covered
 
-### 🟢 Basics
-| Topic | Files |
-|-------|-------|
-| Variables & Data Types | `addition.py`, `variables.py` |
-| Control Flow | `if_else.py`, `loops.py` |
-| Functions | `functions.py`, `lambda.py` |
-| Map/Filter/Reduce | `map_filter_reduce.py` |
-| File Handling | `file_handling.py` |
-| OOP | `class.py`, `inheritance.py`, `property_decorators.py` |
-| Error Handling | `exceptions.py` |
-| Projects | `calculator.py`, `project_guess_the_correct_number.py` |
+### 🟢 Basics (112 Files in 12 Folders)
+
+| Folder | Topic | Files |
+|--------|-------|-------|
+| `01_introduction/` | Hello World, Input/Output | 2 |
+| `02_variables_types/` | Variables, Types, Operators | 13 |
+| `03_control_flow/` | If-Else, Loops, Patterns | 10 |
+| `04_functions/` | Functions, Recursion | 11 |
+| `05_data_structures/` | List, Tuple, Set, Dict | 20 |
+| `06_strings/` | String Operations | 9 |
+| `07_file_handling/` | File I/O | 14 |
+| `08_oop/` | Classes, Inheritance | 15 |
+| `09_error_handling/` | Exceptions | 3 |
+| `10_advanced/` | Lambda, Modules | 11 |
+| `11_projects/` | Games | 3 |
+| `12_web/` | Flask | 1 |
 
 ### 🚀 Web APIs
 | Framework | File | Description |
@@ -79,11 +98,21 @@ pip install -r requirement.txt
 
 ### Run Examples
 
-**Basics:**
+**Basics (Organized by Topic):**
 ```bash
 cd Basics
-python functions.py
-python calculator.py
+
+# Start from the beginning
+cd 01_introduction && python hello_world_first.py
+
+# Learn variables
+cd ../02_variables_types && python arithmetic_addition.py
+
+# Practice loops
+cd ../03_control_flow && python loops_for_while.py
+
+# Build a game
+cd ../11_projects && python game_guess_number.py
 ```
 
 **FastAPI:**
@@ -110,23 +139,23 @@ python main.py
 
 ## 📚 Learning Path
 
-### Level 1: Beginner
-1. Variables & Data Types
-2. Operators & Input/Output
-3. Control Flow (if/else, loops)
-4. Functions
+### Level 1: Beginner (Weeks 1-2)
+1. `01_introduction/` — Hello World, Input
+2. `02_variables_types/` — Variables, Operators
+3. `03_control_flow/` — Conditions, Loops
+4. `04_functions/` — Functions Basics
 
-### Level 2: Intermediate
-1. Data Structures (List, Tuple, Dict, Set)
-2. File Handling
-3. Error Handling
-4. Modules & Imports
+### Level 2: Intermediate (Weeks 3-4)
+1. `05_data_structures/` — Lists, Tuples, Sets, Dicts
+2. `06_strings/` — String Operations
+3. `07_file_handling/` — File I/O
+4. `09_error_handling/` — Exceptions
 
-### Level 3: Advanced
-1. OOP (Classes, Inheritance)
-2. Lambda, Map, Filter, Reduce
-3. Decorators & Properties
-4. Web APIs (FastAPI, Flask)
+### Level 3: Advanced (Weeks 5-6)
+1. `08_oop/` — Classes, Inheritance
+2. `10_advanced/` — Lambda, Map/Filter/Reduce
+3. `12_web/` — Flask Basics
+4. `11_projects/` — Build Games
 
 ### Level 4: Expert
 1. Transformer Architecture
