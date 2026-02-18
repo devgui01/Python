@@ -1,20 +1,26 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
+name: Feature Request
+about: Suggest a new example, project, or improvement
+title: '[FEATURE] '
+labels: 'enhancement'
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Is your request related to a problem?**
+Describe what's missing or what problem you're trying to solve.
 
 **Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+What would you like to see added? Be specific about:
+- Which topic/folder this relates to
+- What the example should demonstrate
+- Any specific concepts to cover
 
 **Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+Are there other ways this could be addressed?
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**Example Use Case**
+How would this help learners? What would they build or learn?
+
+**Additional Context**
+Any other details, code snippets, or references.

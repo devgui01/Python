@@ -1,38 +1,34 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+name: Bug Report
+about: Report a bug or error in the code examples
+title: '[BUG] '
+labels: 'bug'
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Description**
+What's broken? Which file or example has the issue?
+
+**File Location**
+Path to the file with the bug (e.g., `basics/03_control_flow/02_check_prime.py`)
+
+**Expected Behavior**
+What should happen when you run this code?
+
+**Actual Behavior**
+What actually happens? Include any error messages.
 
 **To Reproduce**
-Steps to reproduce the behavior:
+Steps to reproduce:
 1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
+2. Run `python filename.py`
+3. Enter input '...'
 4. See error
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Environment**
+- Python version: (e.g., 3.10, 3.11)
+- OS: (e.g., Windows, macOS, Linux)
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+**Additional Context**
+Any other details that might help fix this issue.

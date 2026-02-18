@@ -1,31 +1,32 @@
 class Planets:
-    nearSun = False  # Class attribute
-    isLifeexist = "Nope"
+    # Class attributes
+    near_sun = False
+    has_life = "Nope"
     power = 100
 
-    def Power(self):
+    def display_power(self):
+        """Display the planet's power level."""
         print(self.power)
 
-    @staticmethod  # Static method - use when we don't use self
-    def Greet():
+    @staticmethod
+    def greet():
+        """Greet the user - static method doesn't use self."""
         print("Good Morning")
 
 
-Neptune = Planets()
-# Neptune.Power()  # Both are same
-# Planets.Power(Neptune)
+# Create planet instances
+neptune = Planets()
+neptune.name = "Neptune"
+neptune.has_life = "Not Possible"
+neptune.power = 900
+neptune.greet()
+print(f"{neptune.name}:")
+print(f"\tPower: {neptune.power}, Has Life: {neptune.has_life}, Near Sun: {neptune.near_sun}\n")
 
-Neptune.planet = "Neptune"  # Object/instance attribute
-Neptune.isLifeexist = "Not Possible"  # Overwrite class attribute
-Neptune.power = 900
-Neptune.Greet()
-print(f"{Neptune.planet}:")
-print(f"\tPower: {Neptune.power}, IsLifeExitsHere: {Neptune.isLifeexist}, PlanetIsNearSun: {Neptune.nearSun}\n")
-
-Earth = Planets()
-Earth.planet = "Earth"  # Object/instance attribute
-Earth.isLifeexist = "Yes"  # Overwrite class attribute
-Earth.nearSun = True  # Overwrite class attribute
-Earth.Greet()
-print(f"{Earth.planet}:")
-print(f"\tIsLifeExitsHere: {Earth.isLifeexist}, PlanetIsNearSun: {Earth.nearSun}\n")
+earth = Planets()
+earth.name = "Earth"
+earth.has_life = "Yes"
+earth.near_sun = True
+earth.greet()
+print(f"{earth.name}:")
+print(f"\tHas Life: {earth.has_life}, Near Sun: {earth.near_sun}\n")

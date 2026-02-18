@@ -1,4 +1,4 @@
-# Write a program to mine a log file and find if it contains 'python' and on which line.
+# Search a log file for 'python' and report the line number
 
 with open("logfile.txt", "r") as log_file:
     log_lines = log_file.readlines()
@@ -9,17 +9,17 @@ with open("logfile.txt", "r") as log_file:
             break
         line_number += 1
     else:
-        print("Python Is Not Present in the above Para!")
+        print("Python not found in the log file.")
 
 # Alternative method (commented):
 # with open("logfile.txt", "r") as f:
 #     data = f.read()
 #     if "python" in data.lower():
-#         print("This Log-File Contains Python")
+#         print("Log file contains 'python'")
 #     else:
-#         print("It doesn't Contain Python")
+#         print("Log file does not contain 'python'")
 
-""" Sample Log
+""" Sample Log Content (logfile.txt):
 [INFO] System started successfully
 [WARNING] Low memory detected
 [INFO] User logged in

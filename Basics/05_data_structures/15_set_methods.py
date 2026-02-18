@@ -1,27 +1,37 @@
-#Set
+# Set Methods Example
 
-set1 = {1,2,3,4,5,False,True,"Aman",23.23,"Rajesh","Patel","Sharma"} #Set1
-set2 = {1,2,3,4,5,"Rajesh","Patel","ranjit"}
-set3 = {462,3297}
-set4 = {"freefire","enormous"}
-set1.add("Ram chandra ") #Add an element to a set
-set1.clear() #remove all elements from the set
-print(set1.copy()) #Return a shallow copy of a set.
-print(set1.difference(set2)) #Return a new set with elements in the set that are not in the others. (Return the value but doesn't with Original Set)
-set1.difference_update(set2) #Update the set, removing elements found in others. (Work with Original Set)
-set1.discard(1) #Remove an element from a set if it is a member.
-print(set1.intersection(set2)) #Return a new set with elements common to the set and all others.(Return the value but doesn't with Original Set)
-set1.intersection_update(set2) #Update the set, keeping only elements found in it and all others.(Work with Original Set)
-print(set1.isdisjoint(set2)) #Return True if two sets have a null intersection.
-print(set2.issubset(set1)) #Report whether another set contains this set.
-print(set1.issuperset(set2)) #Report whether this set contains another set.
-set2.pop() #Pop Any Element
-set1.remove(False) #Remove an element from a set; it must be a member.
-print(set1.symmetric_difference(set2)) #Return a new set with elements in either the set or other but not both.
-set1.symmetric_difference_update(set2) #Update the set, keeping only elements found in either set, but not in both.
-print(set1.union(set2)) #Return a new set with elements from the set and all others.
-set1.update(set2,set3,set4) #Update the set, adding elements from all others.
-print(set1) #Print the Set 
+set1 = {1, 2, 3, 4, 5, False, True, "Aman", 23.23, "Rajesh", "Patel", "Sharma"}
+set2 = {1, 2, 3, 4, 5, "Rajesh", "Patel", "ranjit"}
+set3 = {462, 3297}
+set4 = {"freefire", "enormous"}
+
+# Adding and removing elements
+set1.add("Ram chandra ")        # Add single element
+set1.clear()                    # Remove all elements
+print(set1.copy())              # Create a copy
+
+# Set operations (return new set)
+print(set1.difference(set2))            # Elements in set1 but not set2
+print(set1.intersection(set2))          # Common elements
+print(set1.union(set2))                 # All unique elements
+print(set1.symmetric_difference(set2))  # Elements in either, not both
+
+# Set operations (modify original)
+set1.difference_update(set2)        # Remove elements found in set2
+set1.intersection_update(set2)      # Keep only common elements
+set1.symmetric_difference_update(set2)  # Keep elements in either, not both
+
+# Set relationships
+print(set1.isdisjoint(set2))    # True if no common elements
+print(set2.issubset(set1))      # True if set2 is contained in set1
+print(set1.issuperset(set2))    # True if set1 contains set2
+
+# Other operations
+set2.pop()          # Remove random element
+set1.remove(False)  # Remove specific element (raises error if missing)
+set1.update(set2, set3, set4)  # Add all elements from other sets
+
+print(set1)  # Print the final set 
 
 
 

@@ -1,13 +1,29 @@
-dictionary_data = {"Ram":100,"Kiran":90,"Sneha":99.999,"String":33.33,"l1":[12,22],"t1":("Ram","Sita")}
-print(dictionary_data.items()) #Return a set-like object providing a view on the dict's items.
-print(dictionary_data["l1"]) #In Dictionary , Index are defined !
-print(dictionary_data.keys()) #Return Keys
-print(dictionary_data.values()) #Return Values
-print(dictionary_data.get("Rama")) #Return the value for key if key is in the dictionary, else default.
-dictionary_data.update({"Ram":33.333}) #Returns None , And .update used to Update the Value of the key
-print(dictionary_data.copy()) #Return a shallow copy of the dict.
-print(dictionary_data.pop("Ram")) # if the key is not found, return the default if given; otherwise, raise a KeyError.
-print(dictionary_data.fromkeys({"Rakesh","Prasant"})) #Create a new dictionary with keys from iterable and values set to value.
-print(dictionary_data.setdefault(("Stunt",12422)))  #setdefault() gets the value if key exists ,Adds the key if it doesn't ,Returns the value either way
-print(dictionary_data.clear()) #removes all items from the dictionary.
-print(dictionary_data) #Print the original dictionary
+# Dictionary Methods Example
+
+dictionary_data = {
+    "Ram": 100,
+    "Kiran": 90,
+    "Sneha": 99.999,
+    "String": 33.33,
+    "l1": [12, 22],
+    "t1": ("Ram", "Sita")
+}
+
+print(dictionary_data.items())  # View all key-value pairs
+print(dictionary_data["l1"])    # Access value by key
+print(dictionary_data.keys())   # Get all keys
+print(dictionary_data.values()) # Get all values
+print(dictionary_data.get("Rama"))  # Safe access (returns None if key missing)
+
+dictionary_data.update({"Ram": 33.333})  # Update existing key
+print(dictionary_data.copy())       # Create a shallow copy
+print(dictionary_data.pop("Ram"))   # Remove key and return value
+
+# Create new dict from keys
+print(dictionary_data.fromkeys({"Rakesh", "Prasant"}))  
+
+# Get value or add key with default
+print(dictionary_data.setdefault(("Stunt", 12422)))  
+
+print(dictionary_data.clear())  # Remove all items
+print(dictionary_data)          # Print the dictionary
