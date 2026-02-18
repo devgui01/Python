@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  # Main development environment
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - python_packages:/usr/local/lib/python3.11/site-packages
+    environment:
+      - PYTHONPATH=/app
+      - DEBUG=1
+    working_dir: /app
+    command: python -c "print('Development environment ready!')"
+
+  # Run tests
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONPATH=/app
+    command: pytest tests/ -v --cov=. --cov-report=term-missing
+
+  # Run linting
+  lint:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: bash -c "black --check . && ruff check ."
+
+  # Format code
+  format:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: bash -c "black . && ruff check --fix ."
+
+  # Run FastAPI example
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    working_dir: /app/fastapi
+    command: uvicorn main:app --host 0.0.0.0 --reload
+
+  # Run Flask example
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    working_dir: /app/rest_api
+    command: python main.py
+
+volumes:
+  python_packages:

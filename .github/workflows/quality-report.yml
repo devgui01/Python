@@ -1,0 +1,76 @@
+name: Code Quality Report
+
+on:
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  quality-report:
+    name: Generate Quality Report
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install black ruff pytest
+
+      - name: Run Black check
+        run: black --check . 2>&1 | tee black-output.txt || true
+
+      - name: Run Ruff check
+        run: ruff check . 2>&1 | tee ruff-output.txt || true
+
+      - name: Run tests
+        run: pytest tests/ -v 2>&1 | tee pytest-output.txt || true
+
+      - name: Generate summary report
+        run: |
+          echo "## Code Quality Report" > report.md
+          echo "" >> report.md
+          echo "### Black Formatting" >> report.md
+          if grep -q "would reformat" black-output.txt; then
+            echo "❌ Some files need formatting" >> report.md
+          else
+            echo "✅ All files are properly formatted" >> report.md
+          fi
+          echo "" >> report.md
+          echo "### Ruff Linting" >> report.md
+          if [ -s ruff-output.txt ]; then
+            echo "❌ Linting issues found:" >> report.md
+            cat ruff-output.txt >> report.md
+          else
+            echo "✅ No linting issues" >> report.md
+          fi
+          echo "" >> report.md
+          echo "### Tests" >> report.md
+          if grep -q "passed" pytest-output.txt; then
+            echo "✅ Tests passing" >> report.md
+          else
+            echo "⚠️ No tests or tests failed" >> report.md
+          fi
+
+      - name: Comment PR with report
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('report.md', 'utf8');
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: report
+            });
