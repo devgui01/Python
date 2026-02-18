@@ -3,13 +3,13 @@ A file contains the word "Donkey" multiple times.
 Replace this word with ##### by updating the same file.
 """
 
-with open("donkey.txt") as f:
-    text = f.read()
+with open("donkey.txt") as input_file:
+    file_text = input_file.read()
 
-final = text.replace("donkey", "#####")
+final_text = file_text.replace("donkey", "#####")
 
-with open("donkey.txt", "w") as j:
-    j.write(final)
+with open("donkey.txt", "w") as output_file:
+    output_file.write(final_text)
 
 """
 Sample Paragraph:

@@ -7,23 +7,23 @@ Rock Paper Scissors :
 """
 import random
 def Game(userinput):
-    comp = random.choice(["R","P","S"])
-    d1 ={"R":"Rock","P":"Paper","S":"Scissor"}
-    print(f"You Choose {d1.get(userinput)} and Computer Choose {d1.get(comp)}")
-    if(userinput==comp):
+    computer_choice = random.choice(["R","P","S"])
+    choices_dict = {"R":"Rock","P":"Paper","S":"Scissor"}
+    print(f"You Choose {choices_dict.get(userinput)} and Computer Choose {choices_dict.get(computer_choice)}")
+    if(userinput==computer_choice):
         output = "Draw"
     else:
-        if(userinput == "R" and comp == "P"):
+        if(userinput == "R" and computer_choice == "P"):
             output = "You Lose, Try Again"
-        elif(userinput == "R" and comp == "S"):
+        elif(userinput == "R" and computer_choice == "S"):
             output = "You Won"
-        elif(userinput == "S" and comp == "R"):
+        elif(userinput == "S" and computer_choice == "R"):
             output = "You Lose, Try Again"
-        elif(userinput == "S" and comp == "P"):
+        elif(userinput == "S" and computer_choice == "P"):
             output = "You Won"
-        elif(userinput == "P" and comp == "S"):
+        elif(userinput == "P" and computer_choice == "S"):
             output = "You Lose, Try Again"
-        elif(userinput == "P" and comp == "R"):
+        elif(userinput == "P" and computer_choice == "R"):
             output = "You Won"
         else:
             output = "Something Wents Wrong"

@@ -1,13 +1,13 @@
 # Write a program to mine a log file and find if it contains 'python' and on which line.
 
-with open("logfile.txt", "r") as f:
-    data = f.readlines()
-    line = 1
-    for words in data:
-        if "python" in words:
-            print(f"Line No: {line}")
+with open("logfile.txt", "r") as log_file:
+    log_lines = log_file.readlines()
+    line_number = 1
+    for line_content in log_lines:
+        if "python" in line_content:
+            print(f"Line No: {line_number}")
             break
-        line += 1
+        line_number += 1
     else:
         print("Python Is Not Present in the above Para!")
 

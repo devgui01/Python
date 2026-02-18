@@ -1,5 +1,5 @@
 """
-Write a Class ‘Train’ which has methods to book a ticket, get status (no of seats)
+Write a Class 'Train' which has methods to book a ticket, get status (no of seats)
 and get fare information of train running under Indian Railways.
 """
 
@@ -7,10 +7,10 @@ and get fare information of train running under Indian Railways.
 import random
 
 class Train:
-    def __init__(self, fro, to, tn):
-        self.fro = fro
-        self.to = to
-        self.tn = tn
+    def __init__(self, departure_station, destination_station, train_number):
+        self.departure = departure_station
+        self.destination = destination_station
+        self.train_number = train_number
         self.booked = False
         self.seats = random.randint(1, 100)
 
@@ -19,8 +19,8 @@ class Train:
             self.booked = True
             self.seats -= 1
             print(f"\nTicket Booked Successfully!")
-            print(f"Train No : {self.tn}")
-            print(f"From {self.fro} to {self.to}")
+            print(f"Train No : {self.train_number}")
+            print(f"From {self.departure} to {self.destination}")
         else:
             print("\nNo seats available!")
 
@@ -31,13 +31,13 @@ class Train:
         else:
             run_status = f"Train is {late} hours late"
 
-        print(f"\nTrain No : {self.tn}")
+        print(f"\nTrain No : {self.train_number}")
         print(f"Seats Available : {self.seats}")
         print(run_status)
 
     def fare(self):
         fare = random.randint(100, 1000)
-        print(f"\nTrain No : {self.tn}")
+        print(f"\nTrain No : {self.train_number}")
         print(f"Fare : ₹{fare}")
 
     @staticmethod
@@ -45,22 +45,22 @@ class Train:
         print("Invalid Choice")
 
 
-a = input("Departure Station : ")
-b = input("Destination Station : ")
-c = int(input("Enter Train Number : "))
+departure_station = input("Departure Station : ")
+destination_station = input("Destination Station : ")
+train_number = int(input("Enter Train Number : "))
 
-Passenger = Train(a, b, c)
+Passenger = Train(departure_station, destination_station, train_number)
 
 while True:
-    d = int(input("\n1. Book Ticket\n2. Check Status\n3. Check Fare\n4. Exit\nEnter Choice : "))
+    user_choice = int(input("\n1. Book Ticket\n2. Check Status\n3. Check Fare\n4. Exit\nEnter Choice : "))
 
-    if d == 1:
+    if user_choice == 1:
         Passenger.book()
-    elif d == 2:
+    elif user_choice == 2:
         Passenger.status()
-    elif d == 3:
+    elif user_choice == 3:
         Passenger.fare()
-    elif d == 4:
+    elif user_choice == 4:
         break
     else:
         Train.wrong()

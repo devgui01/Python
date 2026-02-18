@@ -10,20 +10,20 @@ class Calculator:
     def Square(self, Num):
         self.Num = Num
         Num = Num ** 2  # For Square
-        r = round(Num, 2)
-        print(f"Here is Your Square: {r}")
+        result = round(Num, 2)
+        print(f"Here is Your Square: {result}")
 
     def Cube(self, Num):
         self.Num = Num
         Num = Num ** 3  # For Cube
-        r = round(Num, 2)
-        print(f"Here is Your Cube: {r}")
+        result = round(Num, 2)
+        print(f"Here is Your Cube: {result}")
 
     def SquareRoot(self, Num):
         self.Num = Num
         Num = Num ** 0.5  # For Square Root
-        r = round(Num, 2)
-        print(f"Here is Your SquareRoot: {r}")
+        result = round(Num, 2)
+        print(f"Here is Your SquareRoot: {result}")
 
     @staticmethod
     def Wrong():

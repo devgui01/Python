@@ -4,18 +4,18 @@ function.
 """
 from functools import reduce
 
-l1 = [23,23,56,87,34,776,4443,3,33,222,533,2,22,2]
-def max(a,b):
-    if(a>b):
-        return a
-    elif(a<b):
-        return b
-    elif(a==b):
-        return a
+numbers_list = [23, 23, 56, 87, 34, 776, 4443, 3, 33, 222, 533, 2, 22, 2]
+def find_maximum(num1, num2):
+    if num1 > num2:
+        return num1
+    elif num1 < num2:
+        return num2
+    elif num1 == num2:
+        return num1
     else:
         pass
 
-d = reduce(max,l1)
-print(d)
+maximum_value = reduce(find_maximum, numbers_list)
+print(maximum_value)
 
     

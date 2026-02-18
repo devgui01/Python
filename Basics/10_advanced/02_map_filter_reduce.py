@@ -4,22 +4,22 @@
 
 
 from functools import reduce
-l1 = [1, 2, 3, 4, 5, 6]
+numbers_list = [1, 2, 3, 4, 5, 6]
 
 # Example of Map
-square = lambda a: a * a
-a = map(square, l1)
-print(list(a))
+square_function = lambda number: number * number
+squared_result = map(square_function, numbers_list)
+print(list(squared_result))
 
 
 # Example of Filter
-def even(n):
-    if n % 2 == 0:
+def is_even(number):
+    if number % 2 == 0:
         return True
     return False
-a = filter(even, l1)
-print(list(a))
+even_numbers = filter(is_even, numbers_list)
+print(list(even_numbers))
 
 # Example of Reduce
-sum = lambda a, b: a * b
-print(reduce(sum, l1))
+multiply_function = lambda num1, num2: num1 * num2
+print(reduce(multiply_function, numbers_list))

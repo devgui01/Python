@@ -1,10 +1,10 @@
-def sum(a:int,b:int) -> int:
-    sum = a / b
-    return sum
+def divide_numbers(numerator: int, denominator: int) -> float:
+    division_result = numerator / denominator
+    return division_result
 
-a = int(input("Enter the Number : "))
-b = int(input("Enter the Number : "))
-if b==0:
+num1 = int(input("Enter the Number : "))
+num2 = int(input("Enter the Number : "))
+if num2 == 0:
     raise ZeroDivisionError("Hehe")
-a = sum(a,b)
-print(f"\nOutput : {round(a,2)}")
+division_result = divide_numbers(num1, num2)
+print(f"\nOutput : {round(division_result, 2)}")

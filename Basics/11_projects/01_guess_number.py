@@ -20,11 +20,11 @@ def game():
 
 def Multiplayer():
     guess = {}
-    for i in range(2):
+    for player_index in range(2):
         guessed_val = game()
-        print(f"Player {i+1} Guessed in {guessed_val} attempt\n")
-        guess[f"Player {i}"] = guessed_val
-    
+        print(f"Player {player_index+1} Guessed in {guessed_val} attempt\n")
+        guess[f"Player {player_index}"] = guessed_val
+
     if guess["Player 0"] == guess["Player 1"]:
         print("Match Draw")
     elif guess["Player 0"] > guess["Player 1"]:

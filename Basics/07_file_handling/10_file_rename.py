@@ -1,17 +1,17 @@
 """Write a python program to rename a file."""
 
 
-def rename(source, destination):
+def rename_file(source_file, destination_file):
     """Copy content from source file to destination file"""
-    with open(source, "r") as i:
-        data = i.read()
+    with open(source_file, "r") as source_handle:
+        file_data = source_handle.read()
     print("\t\tWorking !!!")
-    with open(destination, "w") as f:
-        f.write(data)
+    with open(destination_file, "w") as destination_handle:
+        destination_handle.write(file_data)
     print("\t\tWork Done !!!")
 
 
-rename(
-    source=input("Enter the File Name You wanna to Rename: "),
-    destination=input("Enter the New File Name: ")
+rename_file(
+    source_file=input("Enter the File Name You wanna to Rename: "),
+    destination_file=input("Enter the New File Name: ")
 )

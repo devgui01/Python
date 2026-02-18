@@ -10,12 +10,12 @@ __len__() # used to set what gets displayed upon calling.__len__() or len(obj)
 """
 
 class Addition():
-    def __init__(self,val):
+    def __init__(self, val):
         self.val = val
 
-    def __add__(self,num):
-        return self.val + num.val
-    
-i = Addition(1)
-j = Addition(9)
-print(i+j)
+    def __add__(self, other):
+        return self.val + other.val
+
+first_number = Addition(1)
+second_number = Addition(9)
+print(first_number + second_number)

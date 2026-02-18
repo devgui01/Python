@@ -1,20 +1,20 @@
 # Before
-def add(a, b):
-    sum = a + b
-    return sum
-a = add(2, 9)
-print(a)
+def add(first_num, second_num):
+    total = first_num + second_num
+    return total
+result = add(2, 9)
+print(result)
 
-def Square(a):
-    S = a * a
-    return S
-a = Square(9)
-print(a)
+def calculate_square(number):
+    squared_result = number * number
+    return squared_result
+result = calculate_square(9)
+print(result)
 
 
 # After
-sum = lambda a, b: a + b
-print(sum(1, 10))
+sum_function = lambda first_num, second_num: first_num + second_num
+print(sum_function(1, 10))
 
-square = lambda a: a * a
-print(square(9))
+square_function = lambda number: number * number
+print(square_function(9))
