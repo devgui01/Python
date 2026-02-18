@@ -3,13 +3,13 @@ Write a python function to remove a given word from a list ad strip it at the sa
 time.
 """
 
-def rem(l,word):
-    n = []
-    for item in l:
-        if not(item==word):
-            n.append(item.strip(word))
-    return n
+def remove_word(string_list, word):
+    cleaned_list = []
+    for item in string_list:
+        if not(item == word):
+            cleaned_list.append(item.strip(word))
+    return cleaned_list
 
 
-l = ["Ram","Shyam","Gyan",'Pyan',"Myan","an"]
-print(rem(l,"an"))
+string_list = ["Ram","Shyam","Gyan",'Pyan',"Myan","an"]
+print(remove_word(string_list, "an"))

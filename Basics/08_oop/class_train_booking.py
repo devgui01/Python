@@ -1,5 +1,5 @@
 """
-Write a Class ‘Train’ which has methods to book a ticket, get status (no of seats)
+Write a Class 'Train' which has methods to book a ticket, get status (no of seats)
 and get fare information of train running under Indian Railways.
 """
 
@@ -7,61 +7,60 @@ and get fare information of train running under Indian Railways.
 import random
 
 class Train:
-    def __init__(self, fro, to, tn):
-        self.fro = fro
-        self.to = to
-        self.tn = tn
-        self.booked = False
-        self.seats = random.randint(1, 100)
+    def __init__(self, departure_station, destination_station, train_number):
+        self.departure = departure_station
+        self.destination = destination_station
+        self.train_number = train_number
+        self.is_booked = False
+        self.available_seats = random.randint(1, 100)
 
-    def book(self):
-        if self.seats > 0:
-            self.booked = True
-            self.seats -= 1
+    def book_ticket(self):
+        if self.available_seats > 0:
+            self.is_booked = True
+            self.available_seats -= 1
             print(f"\nTicket Booked Successfully!")
-            print(f"Train No : {self.tn}")
-            print(f"From {self.fro} to {self.to}")
+            print(f"Train No : {self.train_number}")
+            print(f"From {self.departure} to {self.destination}")
         else:
             print("\nNo seats available!")
 
-    def status(self):
-        late = random.randint(0, 5)
-        if late == 0:
-            run_status = "Train is on time"
+    def get_status(self):
+        delay_hours = random.randint(0, 5)
+        if delay_hours == 0:
+            train_status = "Train is on time"
         else:
-            run_status = f"Train is {late} hours late"
+            train_status = f"Train is {delay_hours} hours late"
 
-        print(f"\nTrain No : {self.tn}")
-        print(f"Seats Available : {self.seats}")
-        print(run_status)
+        print(f"\nTrain No : {self.train_number}")
+        print(f"Seats Available : {self.available_seats}")
+        print(train_status)
 
-    def fare(self):
-        fare = random.randint(100, 1000)
-        print(f"\nTrain No : {self.tn}")
-        print(f"Fare : ₹{fare}")
+    def get_fare(self):
+        fare_amount = random.randint(100, 1000)
+        print(f"\nTrain No : {self.train_number}")
+        print(f"Fare : ₹{fare_amount}")
 
     @staticmethod
-    def wrong():
+    def invalid_choice():
         print("Invalid Choice")
 
 
-a = input("Departure Station : ")
-b = input("Destination Station : ")
-c = int(input("Enter Train Number : "))
+departure_input = input("Departure Station : ")
+destination_input = input("Destination Station : ")
+train_number_input = int(input("Enter Train Number : "))
 
-Passenger = Train(a, b, c)
+passenger = Train(departure_input, destination_input, train_number_input)
 
 while True:
-    d = int(input("\n1. Book Ticket\n2. Check Status\n3. Check Fare\n4. Exit\nEnter Choice : "))
+    user_choice = int(input("\n1. Book Ticket\n2. Check Status\n3. Check Fare\n4. Exit\nEnter Choice : "))
 
-    if d == 1:
-        Passenger.book()
-    elif d == 2:
-        Passenger.status()
-    elif d == 3:
-        Passenger.fare()
-    elif d == 4:
+    if user_choice == 1:
+        passenger.book_ticket()
+    elif user_choice == 2:
+        passenger.get_status()
+    elif user_choice == 3:
+        passenger.get_fare()
+    elif user_choice == 4:
         break
     else:
-        Train.wrong()
-
+        Train.invalid_choice()

@@ -1,9 +1,9 @@
 # 5. Write a program to find the sum of first n natural numbers using while loop.
 
-user = int(input("Enter the Number : "))
-i = 1
-sum = 0
-while(i<user+1):
-    sum += i
-    i+=1
-print(sum)
+limit = int(input("Enter the Number : "))
+counter = 1
+total_sum = 0
+while(counter < limit + 1):
+    total_sum += counter
+    counter += 1
+print(total_sum)

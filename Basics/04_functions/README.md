@@ -1,34 +1,39 @@
-# 04 Functions
+# ⚙️ Functions
 
 Learn to write reusable code with functions.
+
+## Topics Covered
+
+- Function definition
+- Parameters and arguments
+- Return values
+- Default arguments
+- Recursion
+- Scope (local vs global)
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `factorial_loop.py` | Factorial using loop |
-| `factorial_recursive.py` | Factorial using recursion |
-| `format_student_details.py` | Format strings |
-| `function_arguments_return.py` | Arguments and return |
-| `function_default_arguments.py` | Default parameters |
-| `function_find_greatest.py` | Find greatest of three |
-| `function_print_pattern.py` | Print pattern function |
-| `function_print_table.py` | Multiplication table |
-| `functions.py` | Function basics |
-| `sum_natural_numbers_recursive.py` | Recursive sum |
-| `sum_natural_numbers_while.py` | Sum with while loop |
+| `01_functions_basics.py` | Function basics |
+| `02_arguments_return.py` | Arguments and return |
+| `03_find_greatest.py` | Find maximum |
+| `04_print_pattern.py` | Print patterns |
+| `05_print_table.py` | Multiplication table |
+| `06_default_arguments.py` | Default parameters |
+| `07_format_details.py` | Format output |
+| `08_sum_while.py` | Sum with while |
+| `09_sum_recursive.py` | Sum with recursion |
+| `10_factorial_loop.py` | Factorial (loop) |
+| `11_factorial_recursive.py` | Factorial (recursive) |
 
-## Topics Covered
-- Defining functions
-- Parameters and arguments
-- Return values
-- Default arguments
-- Recursion
-- Function calls
+## Try It
 
-## Quick Start
 ```bash
-python functions.py
-python function_find_greatest.py
-python factorial_recursive.py
+python 03_find_greatest.py
+python 11_factorial_recursive.py
 ```
+
+## Next Steps
+
+→ Move to [`05_data_structures/`](../05_data_structures/) to learn about lists, tuples, and more.

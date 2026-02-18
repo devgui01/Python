@@ -1,13 +1,17 @@
-"""Write a python program to rename a file to “renamed_by_ python.txt."""
+"""Write a python program to rename a file."""
 
 
-def rename(a,b): #a-->Before Renamed file b-->After Renamed File
-    with open(f"/Users/dartstorm/Desktop/Github/Python/Basics/{a}","r") as i:
-        data = i.read()
-    print(f"\t\tWorking !!!")
-    with open(f"/Users/dartstorm/Desktop/Github/Python/Basics/{b}","w") as f:
-        f.write(data)
-    print(f"\t\t Work Done !!!")
-    
+def rename_file(source_file, destination_file):
+    """Copy content from source file to destination file"""
+    with open(source_file, "r") as source_handle:
+        file_data = source_handle.read()
+    print("\t\tWorking !!!")
+    with open(destination_file, "w") as destination_handle:
+        destination_handle.write(file_data)
+    print("\t\tWork Done !!!")
 
-rename(a=input("Enter the File Name You wanna to Rename : "),b=input("Enter the Name you have to give to the file : "))
+
+rename_file(
+    source_file=input("Enter the File Name You wanna to Rename: "),
+    destination_file=input("Enter the New File Name: ")
+)

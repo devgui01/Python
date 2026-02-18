@@ -1,35 +1,29 @@
-# 09 Error Handling
+# ⚠️ Error Handling
 
-Handle exceptions gracefully in Python.
+Learn to handle exceptions gracefully.
+
+## Topics Covered
+
+- Try/except blocks
+- Raising exceptions
+- Custom exceptions
+- Error handling best practices
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `exception_handling_try_except.py` | Try-except basics |
-| `exception_raise_example.py` | Raise exceptions |
-| `handle_zero_division.py` | Handle division by zero |
+| `01_try_except.py` | Try/except basics |
+| `02_raise_exception.py` | Raise exceptions |
+| `03_handle_division.py` | Handle zero division |
 
-## Topics Covered
-- Try-except blocks
-- Multiple exceptions
-- Raise keyword
-- Else clause
-- Finally clause
-- Custom exceptions
+## Try It
 
-## Quick Start
 ```bash
-python exception_handling_try_except.py
-python handle_zero_division.py
+python 01_try_except.py
+python 03_handle_division.py
 ```
 
-## Example
-```python
-try:
-    result = 10 / 0
-except ZeroDivisionError:
-    print("Cannot divide by zero!")
-finally:
-    print("This always runs")
-```
+## Next Steps
+
+→ Move to [`10_advanced/`](../10_advanced/) for advanced Python features.

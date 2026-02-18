@@ -1,12 +1,12 @@
-#List Methods 
-mylist = ["ram","gyan",1111.222,444,"33","Ramit sioeo","ram","ram"]
-mylist.append("sita gita") #Append object to the end of the list.
-b = mylist.count("ram")#Return number of occurrences of value.
-c = mylist.extend("slice")#Extend list by appending elements from the iterable.
-d = mylist.index("ram") #Return first index of value.
-e = mylist.insert(1,"sita")#Insert object before index.
-f = mylist.pop(2)#Remove and return item at index (default last).
-g = mylist.remove("ram") #Remove first occurrence of value.
-z = mylist.reverse() #reverse the list
-abcd = mylist.sort() #Sort the list in ascending order and return None.
-print(b,d,mylist,f) #print and return value (if possible)
+#List Methods
+my_list = ["ram","gyan",1111.222,444,"33","Ramit sioeo","ram","ram"]
+my_list.append("sita gita") #Append object to the end of the list.
+ram_count = my_list.count("ram")#Return number of occurrences of value.
+my_list.extend("slice")#Extend list by appending elements from the iterable.
+ram_index = my_list.index("ram") #Return first index of value.
+my_list.insert(1,"sita")#Insert object before index.
+popped_item = my_list.pop(2)#Remove and return item at index (default last).
+my_list.remove("ram") #Remove first occurrence of value.
+my_list.reverse() #reverse the list
+my_list.sort() #Sort the list in ascending order and return None.
+print(ram_count, ram_index, my_list, popped_item) #print and return value (if possible)

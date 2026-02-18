@@ -1,14 +1,14 @@
 # Write a program to sum a list with 4 numbers.
 
-#Complex Method 
+#Complex Method
 
-l1 =[12,12,12,34] #Empty List
-""" 
+numbers_list = [12, 12, 12, 34] #Empty List
+"""
 Pop each element and return its value & simultaneouly store for all four numbers and store in addlist Variable
 """
-addlist= l1.pop() + l1.pop() + l1.pop() + l1.pop() 
-print(f"Sum of Elements : {addlist}") #Print Addlist Variable
-print(l1) #Print the Original List
+sum_result = numbers_list.pop() + numbers_list.pop() + numbers_list.pop() + numbers_list.pop()
+print(f"Sum of Elements : {sum_result}") #Print Addlist Variable
+print(numbers_list) #Print the Original List
 
 
 
@@ -16,5 +16,5 @@ print(l1) #Print the Original List
 
 #Simple Build-In-Method
 
-l = [12,12,12,12,12]
-print(sum(l))
+numbers_list = [12, 12, 12, 12, 12]
+print(sum(numbers_list))

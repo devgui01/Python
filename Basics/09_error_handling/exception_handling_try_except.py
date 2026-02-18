@@ -1,12 +1,12 @@
-def sum(a: int, b: int) -> int:
-    result = a / b
+def divide_numbers(first_num: int, second_num: int) -> int:
+    result = first_num / second_num
     return result
 
 try:
-    a = int(input("Enter the Number: "))
-    b = int(input("Enter the Number: "))
-    a = sum(a, b)
-    print(f"\nOutput: {round(a, 2)}")
+    first_number = int(input("Enter the Number: "))
+    second_number = int(input("Enter the Number: "))
+    first_number = divide_numbers(first_number, second_number)
+    print(f"\nOutput: {round(first_number, 2)}")
 
 except ZeroDivisionError:
     print("A Number Can't be Divide by Zero")
@@ -14,8 +14,8 @@ except ZeroDivisionError:
 except ValueError:
     print("Enter a Valid Number!")
 
-except Exception as e:
-    print(e)
+except Exception as error:
+    print(error)
 
 else:
     print("Else: Program Worked")

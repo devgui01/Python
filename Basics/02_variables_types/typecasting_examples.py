@@ -1,15 +1,14 @@
 print("1.")
-a = "12.009"  #String
-b = float(a)  #String to Float
-print(type(b))
+string_value = "12.009"  #String
+float_value = float(string_value)  #String to Float
+print(type(float_value))
 
 print("2.")
-a = "12b"  #String
-"""b = float(a) """ #Error-Occured @TypeError
-print(type(b))
+invalid_string = "12b"  #String
+"""float_value = float(invalid_string) """ #Error-Occured @TypeError
+print(type(float_value))
 
 print("3.")
-z = "123"
-b = int(z)
-print(type(b))
-
+numeric_string = "123"
+integer_value = int(numeric_string)
+print(type(integer_value))

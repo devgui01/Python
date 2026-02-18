@@ -1,52 +1,45 @@
-# 08 Object-Oriented Programming
+# 🏗️ Object-Oriented Programming (OOP)
 
-Learn OOP concepts in Python.
+Master classes, objects, and inheritance.
+
+## Topics Covered
+
+- Classes and objects
+- Constructors
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Operator overloading
+- Property decorators
 
 ## Files
 
-### Classes & Objects
 | File | Description |
 |------|-------------|
-| `class_basics.py` | Class basics |
-| `class_constructor_example.py` | Constructors |
-| `oops_examples.py` | OOP examples |
+| `01_class_basics.py` | Class introduction |
+| `02_class_calculator.py` | Calculator app |
+| `03_class_constructor.py` | Constructor example |
+| `04_class_encapsulation.py` | Encapsulation |
+| `05_class_programmer.py` | Programmer class |
+| `06_class_booking.py` | Train booking |
+| `07_operator_overloading.py` | Overload operators |
+| `08_oop_examples.py` | OOP examples |
+| `09_inheritance_types.py` | Inheritance types |
+| `10_inheritance_multilevel.py` | Multilevel |
+| `11_inheritance_vector.py` | Vector example |
+| `12_inheritance_super.py` | Super keyword |
+| `13_property_decorator.py` | Property decorator |
+| `14_property_example.py` | Property example |
+| `15_complex_numbers.py` | Complex operations |
+| `16_salary_increment.py` | Salary increment |
 
-### Inheritance
-| File | Description |
-|------|-------------|
-| `inheritance_types.py` | Types of inheritance |
-| `inheritance_multilevel.py` | Multilevel inheritance |
-| `inheritance_super_keyword.py` | Super keyword |
-| `inheritance_vector_example.py` | Inheritance example |
+## Try It
 
-### Properties & Decorators
-| File | Description |
-|------|-------------|
-| `property_decorator_name.py` | Property decorator |
-| `property_decorator_example.py` | Property example |
-| `employee_salary_increment.py` | Salary with property |
-
-### Advanced OOP
-| File | Description |
-|------|-------------|
-| `class_operator_overloading.py` | Operator overloading |
-| `class_programmer_microsoft.py` | Programmer class |
-| `class_train_booking.py` | Train booking class |
-| `complex_numbers_operations.py` | Complex numbers |
-| `class_encapsulation_validation.py` | Encapsulation |
-
-## Topics Covered
-- Classes and objects
-- Attributes and methods
-- Inheritance (single, multilevel, multiple)
-- Encapsulation
-- Property decorators
-- Operator overloading
-- Super keyword
-
-## Quick Start
 ```bash
-python class_basics.py
-python inheritance_types.py
-python property_decorator_name.py
+python 02_class_calculator.py
+python 09_inheritance_types.py
 ```
+
+## Next Steps
+
+→ Move to [`09_error_handling/`](../09_error_handling/) to handle exceptions.

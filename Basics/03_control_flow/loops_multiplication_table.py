@@ -1,14 +1,13 @@
 # Write a program to print multiplication table of a given number using loops.
 
 #Using ForLoops
-user = int(input("Enter the number : ")) 
-for i in range(10):
-    print(f"{user} * {i+1} = {user*(i+1)} ")
+number = int(input("Enter the number : "))
+for multiplier in range(10):
+    print(f"{number} * {multiplier + 1} = {number * (multiplier + 1)} ")
 
-i=1
+multiplier = 1
 #Using WhileLoops
-user = int(input("Enter the number : ")) 
-while(i<11):
-    print(f"{user} * {i} = {user*i}")
-    i = i+1
-    
+number = int(input("Enter the number : "))
+while(multiplier < 11):
+    print(f"{number} * {multiplier} = {number * multiplier}")
+    multiplier = multiplier + 1

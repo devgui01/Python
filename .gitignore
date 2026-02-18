@@ -61,7 +61,6 @@ secrets.json
 # Data / model files
 # ==========================
 gpt2/
-data/
 *.h5
 *.pt
 *.ckpt
@@ -69,6 +68,11 @@ data/
 *.bin
 *.csv
 *.tsv
+
+# Keep data/ folder but ignore large model files
+data/*.pt
+data/*.bin
+data/*.model
 
 # ==========================
 # Logs and temporary files

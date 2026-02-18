@@ -1,12 +1,10 @@
 """
 Store the multiplication tables in a file named Tables.txt.
 """
-l1 = [2,4,6,8,10,12,14,16,18,20]
-with open("/Users/dartstorm/Desktop/Github/Python/Basics/Tables.py","w") as f:
-    for item in l1:
-        f.write(str(f"{item}\t"))
-    
-with open("/Users/dartstorm/Desktop/Github/Python/Basics/Tables.py") as w:
-    print(w.read())
+even_numbers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+with open("Tables.py", "w") as output_file:
+    for number in even_numbers:
+        output_file.write(f"{number}\t")
 
-
+with open("Tables.py") as read_file:
+    print(read_file.read())

@@ -1,8 +1,8 @@
-a = 1000
-def code():
-    global a #The global keyword allows a function to modify a global variable.
-    a = 12
-    print(a) 
+global_value = 1000
+def modify_global():
+    global global_value #The global keyword allows a function to modify a global variable.
+    global_value = 12
+    print(global_value)
 
-code()
-print(a)
+modify_global()
+print(global_value)

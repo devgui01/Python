@@ -2,42 +2,42 @@
 value and use key as their names. Assume that the names are unique.'''
 
 # Answer Type 1
-d1 = {}
-Ram = input("""Syntax :-
+friends_languages = {}
+ram_input = input("""Syntax :-
             --Name-- --xxProgrammingLanguage--
 Enter your Name with Your Favourite Programming Language : """).split(" ")
-key = Ram[0]
-val = Ram[1]
-d1.update({key:val})
-Shyam = input("""Syntax :-
+key = ram_input[0]
+value = ram_input[1]
+friends_languages.update({key: value})
+shyam_input = input("""Syntax :-
             --Name-- --xxProgrammingLanguage--
 Enter your Name with Your Favourite Programming Language : """).split(" ")
-key = Shyam[0]
-val = Shyam[1]
-d1.update({key:val})
-Gita = input("""Syntax :-
+key = shyam_input[0]
+value = shyam_input[1]
+friends_languages.update({key: value})
+gita_input = input("""Syntax :-
             --Name-- --xxProgrammingLanguage--
 Enter your Name with Your Favourite Programming Language : """).split(" ")
-key = Gita[0]
-val = Gita[1]
-d1.update({key:val})
-Ritu = input("""Syntax :-
+key = gita_input[0]
+value = gita_input[1]
+friends_languages.update({key: value})
+ritu_input = input("""Syntax :-
             --Name-- --xxProgrammingLanguage--
 Enter your Name with Your Favourite Programming Language : """).split(" ")
-key = Ritu[0]
-val = Ritu[1]
-d1.update({key:val})
-print(d1)
+key = ritu_input[0]
+value = ritu_input[1]
+friends_languages.update({key: value})
+print(friends_languages)
 
 # Answer Type 2
 
-Ram = input("Enter your Favourite Programming Language : ")
-Shyam = input("Enter your Favourite Programming Language : ")
-Gita = input("Enter your Favourite Programming Language : ")
-Ritu = input("Enter your Favourite Programming Language : ")
-d1 = {"Ram":None,"Shyam":None,"Gita":None,"Ritu":None}
-d1.update({'Ram':Ram})
-d1.update({'Shyam':Shyam})
-d1.update({'Gita':Gita})
-d1.update({'Ritu':Ritu})
-print(d1)
+ram_language = input("Enter your Favourite Programming Language : ")
+shyam_language = input("Enter your Favourite Programming Language : ")
+gita_language = input("Enter your Favourite Programming Language : ")
+ritu_language = input("Enter your Favourite Programming Language : ")
+friends_languages = {"Ram":None,"Shyam":None,"Gita":None,"Ritu":None}
+friends_languages.update({'Ram': ram_language})
+friends_languages.update({'Shyam': shyam_language})
+friends_languages.update({'Gita': gita_language})
+friends_languages.update({'Ritu': ritu_language})
+print(friends_languages)

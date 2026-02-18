@@ -1,1 +1,1 @@
-from module import add
+from module import add_numbers

@@ -1,12 +1,11 @@
-#Before Using emumerate
-l1 = ["Hello",23,False,True,45,"Ram"]
+#Before Using enumerate
+items_list = ["Hello", 23, False, True, 45, "Ram"]
 index = 0
-for item in l1:
+for item in items_list:
     print(f"The item number at index {index} is {item}")
-    index = index+1
+    index = index + 1
 
 # Using Enumerate
 
-for index,item in enumerate(l1):
+for index, item in enumerate(items_list):
     print(f"The item number at index {index} is {item}")
-

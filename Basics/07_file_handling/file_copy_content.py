@@ -1,23 +1,13 @@
-# Write a program to make a copy of a text file “this.txt” in "pcopy.txt"
+# Write a program to make a copy of "this.txt" to "pcopy.txt"
 
-def copy(a): #1.kya copy 2.kisme copy
-    copymaal = a
-    return copymaal
+def copy_file_content(source_content):
+    """Copy file content"""
+    return source_content
 
-with open(f"/Users/dartstorm/Desktop/Github/Python/Basics/this.txt","r") as f:
-    data = f.read()
-    
-dat = copy(data)
+with open("this.txt", "r") as source_file:
+    file_data = source_file.read()
 
-with open(f"/Users/dartstorm/Desktop/Github/Python/Basics/pcopy.txt","w") as f:
-    f.write(dat)
+copied_data = copy_file_content(file_data)
 
-
-
-
-
-
-
-
-
-    
+with open("pcopy.txt", "w") as destination_file:
+    destination_file.write(copied_data)

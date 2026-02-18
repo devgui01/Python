@@ -1,27 +1,25 @@
 # Write a program using functions to find greatest of three numbers.
 
-def greatest(a,b,c):
-    if(a>=b and a>c):
-        return f"{a} is Greater among {b} and {c}"
-    elif(b>=c and b>=a):
-        return f"{b} is Greater among {a} and {c}"
-    elif(c>=a and c>=b):
-        return f"{c} is Greater among {a} and {b}"
+def find_greatest(first_num, second_num, third_num):
+    if(first_num >= second_num and first_num > third_num):
+        return f"{first_num} is Greater among {second_num} and {third_num}"
+    elif(second_num >= third_num and second_num >= first_num):
+        return f"{second_num} is Greater among {first_num} and {third_num}"
+    elif(third_num >= first_num and third_num >= second_num):
+        return f"{third_num} is Greater among {first_num} and {second_num}"
     else:
-        return f"Invalid Numbers : {a}{b}{c} "
+        return f"Invalid Numbers : {first_num}{second_num}{third_num} "
 count = 0
-numbers = []
+numbers_list = []
 while True:
-    i = int(input("Enter the Numbers : "))
-    numbers.append(i)
-    count+=1
-    if(count==3):
+    number = int(input("Enter the Numbers : "))
+    numbers_list.append(number)
+    count += 1
+    if(count == 3):
         break
-print(f"ok! I Found Your Numbers : {numbers}")
-a = numbers[0]
-b = numbers[1]
-c = numbers[2]
-check = greatest(a,b,c)
-print(f"{check}")
-
-
+print(f"ok! I Found Your Numbers : {numbers_list}")
+first_num = numbers_list[0]
+second_num = numbers_list[1]
+third_num = numbers_list[2]
+result = find_greatest(first_num, second_num, third_num)
+print(f"{result}")

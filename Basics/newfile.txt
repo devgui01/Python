@@ -1,1 +1,0 @@
-This is the New File Reads one line at a time from the file. Returns a single string (including the newline at the end, if present). Useful when you want to process a file line by line (memory-efficient).

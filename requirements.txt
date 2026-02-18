@@ -1,0 +1,49 @@
+# Python Learning Repository - Requirements
+# Install with: pip install -r requirements.txt
+
+# ===========================================
+# Core Dependencies (Required for Basics)
+# ===========================================
+# No external dependencies needed for basics/
+# Python 3.10+ includes everything you need
+
+# ===========================================
+# Web Development (FastAPI & Flask)
+# ===========================================
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+flask>=3.0.0
+flask-sqlalchemy>=3.1.0
+pydantic>=2.0.0
+
+# ===========================================
+# Data Science & Visualization
+# ===========================================
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# ===========================================
+# Deep Learning & LLMs
+# ===========================================
+torch>=2.0.0
+transformers>=4.30.0
+tiktoken>=0.5.0
+safetensors>=0.3.0
+
+# ===========================================
+# LLM Tools (Optional - Advanced Section)
+# ===========================================
+langchain>=0.1.0
+langchain-community>=0.0.1
+llama-index>=0.10.0
+litgpt>=0.1.0
+ollama>=0.1.0
+
+# ===========================================
+# Utilities
+# ===========================================
+python-dotenv>=1.0.0
+requests>=2.31.0
+pyttsx3>=2.90.0  # Text-to-speech
+pyjokes>=0.6.0   # For fun examples

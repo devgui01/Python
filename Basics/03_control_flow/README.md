@@ -1,33 +1,37 @@
-# 03 Control Flow
+# 🔀 Control Flow
 
-Master conditional statements and loops in Python.
+Master conditional statements and loops.
+
+## Topics Covered
+
+- If/else statements
+- For loops
+- While loops
+- Nested loops
+- Pattern printing
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `check_prime_number.py` | Check if prime |
-| `conditional_if_else.py` | If-else basics |
-| `greet_names_starting_with.py` | Loop with condition |
-| `if_else_challenges.py` | If-else practice |
-| `loops_for_while.py` | For and while loops |
-| `loops_multiplication_table.py` | Table with loops |
-| `print_table_reverse.py` | Reverse table |
-| `star_pattern_hollow_square.py` | Hollow square pattern |
-| `star_pattern_increasing.py` | Increasing star pattern |
-| `star_pattern_pyramid.py` | Pyramid pattern |
+| `01_if_else.py` | Basic conditions |
+| `02_check_prime.py` | Prime number checker |
+| `03_for_while_loops.py` | Loop examples |
+| `04_multiplication_loop.py` | Multiplication table |
+| `05_reverse_table.py` | Reverse counting |
+| `06_greet_names.py` | Greet names starting with letter |
+| `07_pattern_increasing.py` | Star pattern |
+| `08_pattern_pyramid.py` | Pyramid pattern |
+| `09_pattern_hollow_square.py` | Hollow square |
+| `10_if_else_challenges.py` | Practice problems |
 
-## Topics Covered
-- If-else statements
-- For loops
-- While loops
-- Break and continue
-- Pattern printing
-- Nested loops
+## Try It
 
-## Quick Start
 ```bash
-python conditional_if_else.py
-python loops_for_while.py
-python star_pattern_pyramid.py
+python 02_check_prime.py
+python 08_pattern_pyramid.py
 ```
+
+## Next Steps
+
+→ Move to [`04_functions/`](../04_functions/) to learn about functions.

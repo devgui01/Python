@@ -3,34 +3,34 @@
 
 
 #Technique One (Harder+fragile+Complex)
-name = input("Enter Your Name : ")
+user_name = input("Enter Your Name : ")
 date = input("Enter the Date like : DD/MM/YY ?\nUnderstand Enter :")
-letter = '''
+letter_template = '''
 Dear <|Name|>,
 You are selected!
 <|Date|>
 '''
-vname = letter.replace("<|Name|>",name)
-vdate = vname.replace("<|Date|>",date)
-count = len(name) #Count for name length 
-finalCount = 25 + count #Count for name 
-out = vname[:finalCount]
-fdate = vdate[finalCount:]
-# print(fdate)
-# print(out)
-print(out,fdate)
+name_replaced = letter_template.replace("<|Name|>", user_name)
+date_replaced = name_replaced.replace("<|Date|>", date)
+name_length = len(user_name) #Count for name length
+final_count = 25 + name_length #Count for name
+output_start = name_replaced[:final_count]
+output_end = date_replaced[final_count:]
+# print(output_end)
+# print(output_start)
+print(output_start, output_end)
 
 
-#Simple And Easiest Way 
-name = input("Enter Your Name: ")
+#Simple And Easiest Way
+user_name = input("Enter Your Name: ")
 date = input("Enter the Date (DD/MM/YY): ")
 
-letter = '''
+letter_template = '''
 Dear <|Name|>,
 You are selected!
 <|Date|>
 '''
 
-lname = letter.replace("<|Name|>",name)
-ldate = lname.replace("<|Date|>",date)
-print(ldate)
+name_replaced = letter_template.replace("<|Name|>", user_name)
+date_replaced = name_replaced.replace("<|Date|>", date)
+print(date_replaced)

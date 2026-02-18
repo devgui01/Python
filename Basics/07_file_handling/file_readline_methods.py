@@ -1,25 +1,24 @@
-#File_Handling_Functions :-
+# File Handling - Readline Methods
 
-# # 1.Use of Readline()
-f = open("/Users/dartstorm/Desktop/Github/Python/Basics/newfile.txt")
-line = f.readline()
-while line:
-    print(line)
-    line = f.readline()
-f.close()           
+# 1. Use of readline()
+file_handle = open("newfile.txt")
+current_line = file_handle.readline()
+while current_line:
+    print(current_line)
+    current_line = file_handle.readline()
+file_handle.close()
 
 # or
 
-f = open("/Users/dartstorm/Desktop/Github/Python/Basics/newfile.txt")
-data = f.readline()
-while (data != ""):
-    print(data)
-    data = f.readline()
-f.close()
+file_handle = open("newfile.txt")
+line_data = file_handle.readline()
+while line_data != "":
+    print(line_data)
+    line_data = file_handle.readline()
+file_handle.close()
 
-# #2.Use of Readlines()
-f = open("/Users/dartstorm/Desktop/Github/Python/Basics/newfile.txt")
-data = f.readlines()
-print(data)
-f.close()
-
+# 2. Use of readlines()
+file_handle = open("newfile.txt")
+all_lines = file_handle.readlines()
+print(all_lines)
+file_handle.close()

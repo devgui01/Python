@@ -1,5 +1,5 @@
 # Set
-"""  
+"""
 1. Sets are unordered,
 2. Sets cannot contain duplicate values,
 3.Sets are unindexed => Cannot access elements by index
@@ -7,9 +7,9 @@
 """
 
 
-set1 = {12,2,32,3} #--> Set 
-print(type(set1)) #Print the type of variable
+numbers_set = {12, 2, 32, 3} #--> Set
+print(type(numbers_set)) #Print the type of variable
 
 # For Empty Set
-set1 = set() #--Empty Set Created
-print(type(set1)) #Print the type of variable
+numbers_set = set() #--Empty Set Created
+print(type(numbers_set)) #Print the type of variable

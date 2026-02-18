@@ -1,13 +1,14 @@
 """
-Write a program to generate multiplication tables from 2 to 20 and write it to the
-different files. Place these files in a folder for a 13 – year old.
+Write a program to generate multiplication tables from 2 to 20 and write to different files.
+Place these files in a folder for a 13-year-old.
 """
 
+import os
 
+# Create tables folder if it doesn't exist
+os.makedirs("tables", exist_ok=True)
 
-inp = 1
-for j in range(2,21):
-    inp+=1
-    with open(f"/Users/dartstorm/Desktop/Github/Python/Basics/tables/Table of {inp}","w") as f:
-        for i in range(1,11):
-            f.write(f"{inp} * {i} = {inp*i}\n")
+for table_num in range(2, 21):
+    with open(f"tables/Table_of_{table_num}", "w") as table_file:
+        for multiplier in range(1, 11):
+            table_file.write(f"{table_num} * {multiplier} = {table_num * multiplier}\n")

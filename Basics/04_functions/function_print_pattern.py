@@ -7,26 +7,19 @@ Write a python function to print first n lines of the following pattern:
 '''
 
 # Type1
-def patt(n):
-    if(n==0):
+def print_pattern(rows):
+    if(rows == 0):
         return
     else:
-        print("*" * n)
-        patt(n-1)
-p = patt(3)
+        print("*" * rows)
+        print_pattern(rows - 1)
+result = print_pattern(3)
 
 
 # Type2
-def pattern(n):
-    for i in range(1,n+1):         
-        print(f"*" * ((n+1)-i))
+def generate_pattern(n):
+    for row in range(1, n + 1):
+        print(f"*" * ((n + 1) - row))
 
-n = int(input("Enter the 'n' : "))
-pattern(n)
-
-
-
-
-
-
-        
+rows = int(input("Enter the 'n' : "))
+generate_pattern(rows)

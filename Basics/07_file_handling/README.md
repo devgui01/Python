@@ -1,42 +1,41 @@
-# 07 File Handling
+# 📁 File Handling
 
-Read, write, and manipulate files in Python.
+Learn to read and write files.
+
+## Topics Covered
+
+- Opening files
+- Reading/writing
+- File modes
+- Search and replace
+- Multiple files
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `compare_two_files.py` | Compare file contents |
-| `file_censor_words.py` | Censor words in file |
-| `file_copy_content.py` | Copy file content |
-| `file_delete_content.py` | Delete file content |
-| `file_find_word.py` | Find word in file |
-| `file_handling.py` | File handling basics |
-| `file_open_multiple.py` | Open multiple files |
-| `file_readline_methods.py` | Readline methods |
-| `file_rename_function.py` | Rename file |
-| `file_replace_word.py` | Replace word in file |
-| `file_search_log.py` | Search log file |
-| `file_store_numbers.py` | Store numbers in file |
-| `file_write_even_numbers.py` | Write even numbers |
-| `file_write_tables.py` | Write tables to files |
+| `01_file_handling_basics.py` | File basics |
+| `02_file_readlines.py` | Readline methods |
+| `03_file_multiple.py` | Open multiple |
+| `04_file_numbers.py` | Store numbers |
+| `05_file_write_tables.py` | Write tables |
+| `06_file_even_numbers.py` | Write even numbers |
+| `07_file_find_word.py` | Search word |
+| `08_file_search_log.py` | Search log file |
+| `09_file_delete.py` | Delete content |
+| `10_file_rename.py` | Rename function |
+| `11_file_copy.py` | Copy content |
+| `12_file_replace.py` | Replace word |
+| `13_file_censor.py` | Censor words |
+| `14_file_compare.py` | Compare files |
 
-## Topics Covered
-- Opening files (open, with)
-- Reading files (read, readline, readlines)
-- Writing files (write, append)
-- File modes (r, w, a)
-- Context managers
-- File operations
+## Try It
 
-## Quick Start
 ```bash
-python file_handling.py
-python file_readline_methods.py
-python file_censor_words.py
+python 01_file_handling_basics.py
+python 07_file_find_word.py
 ```
 
-## Sample Files
-- `logfile.txt` - Sample log file
-- `poems.txt` - Sample poem file
-- `donkey.txt` - Sample text file
+## Next Steps
+
+→ Move to [`08_oop/`](../08_oop/) to learn Object-Oriented Programming.

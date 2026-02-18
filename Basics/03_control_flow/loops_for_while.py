@@ -1,69 +1,69 @@
 # For Loops
-for i in range(1, 11):
-    print("Hello World", i)
+for iteration in range(1, 11):
+    print("Hello World", iteration)
 print("Start of For Loop_____________________________")
 
 
-l1 = ["ram", False, True, "Radhe", "Gather", 222222]
+items_list = ["ram", False, True, "Radhe", "Gather", 222222]
 # For Lists
-for i in l1:
-    print(i)
+for item in items_list:
+    print(item)
 
-for i in range(len(l1)):
-    print(l1[i])
+for index in range(len(items_list)):
+    print(items_list[index])
 print("End of For Loop_____________________________Lists")
 
 
-l2 = ("ram", False, True, "Radhe", "Gather", 222222)
+tuple_items = ("ram", False, True, "Radhe", "Gather", 222222)
 # For Tuple
-for i in range(len(l2)):
-    print(l2[i])
+for index in range(len(tuple_items)):
+    print(tuple_items[index])
 
-for i in l2:
-    print(i)
+for item in tuple_items:
+    print(item)
 print("End of For Loop_____________________________Tuples")
 
 
-l3 = "ram", "Radhe", "Gather"
+string_tuple = "ram", "Radhe", "Gather"
 # For Strings
-for i in range(len(l3)):
-    print(l3[i])
+for index in range(len(string_tuple)):
+    print(string_tuple[index])
 
-for i in l3:
-    print(i)
+for item in string_tuple:
+    print(item)
 print("End of For Loop_____________________________Strings")
 
 # Using Break, Continue and Pass
-for i in range(11):
-    if i == 5:
+for number in range(11):
+    if number == 5:
         break
-    print(i)
+    print(number)
 print("End of For Loop_____________________________Break")
 
 # Continue - skip current iteration
-for i in range(11):
-    if i == 5:
+for number in range(11):
+    if number == 5:
         continue
-    print(i)
+    print(number)
 print("End of For Loop_____________________________Continue")
 
 # Pass - null statement
-for i in range(11):
-    if i == 5:
+for number in range(11):
+    if number == 5:
         pass
 print("End of For Loop_____________________________Pass")
 
 # Else in for loop
-for i in range(21):
-    print(i)
+for number in range(21):
+    print(number)
 else:
     print("Printed till 21")
 print("End of For Loop_____________________________Else")
 
 
 # While Loops
-i = 1
-while i < 11:
-    print("Hello World", i)
-    i = i + 1
+counter = 1
+while counter < 11:
+    print("Hello World", counter)
+    counter = counter + 1
 print("End of While Loop_____________________________")

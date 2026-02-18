@@ -1,8 +1,8 @@
 #Default Arguments
 
-def sum(a,b,idea="All is Well"):
-    sum = a+b
-    return f"Your Sum is : {sum} and {idea}"
+def calculate_sum(first_num, second_num, message="All is Well"):
+    total = first_num + second_num
+    return f"Your Sum is : {total} and {message}"
 
-just = (sum(24,36))
-print(just)
+result = (calculate_sum(24, 36))
+print(result)

@@ -1,9 +1,9 @@
 # Functions
-def add():
-    a = int(input("Enter the Number: "))
-    b = int(input("Enter the Number: "))
-    sum = a + b
-    print(sum)
+def add_numbers():
+    first_number = int(input("Enter the Number: "))
+    second_number = int(input("Enter the Number: "))
+    total = first_number + second_number
+    print(total)
 
-for i in range(1, 6):
-    add()
+for iteration in range(1, 6):
+    add_numbers()

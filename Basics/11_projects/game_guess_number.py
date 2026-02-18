@@ -1,38 +1,38 @@
 import random
 
 
-def game():
+def play_game():
     random_number = random.randint(1, 100)
-    user_input = -1
-    guess = 1
-    while user_input != random_number:
-        user_input = int(input(f"Guess the Number: "))
-        if user_input > random_number:
+    user_guess = -1
+    attempt_count = 1
+    while user_guess != random_number:
+        user_guess = int(input(f"Guess the Number: "))
+        if user_guess > random_number:
             print("\t\tChoose a Lower number")
-            guess += 1
-        elif user_input < random_number:
+            attempt_count += 1
+        elif user_guess < random_number:
             print("\t\tChoose a Higher number")
-            guess += 1
+            attempt_count += 1
         else:
             break
-    return guess
+    return attempt_count
 
 
-def Multiplayer():
-    guess = {}
-    for i in range(2):
-        guessed_val = game()
-        print(f"Player {i+1} Guessed in {guessed_val} attempt\n")
-        guess[f"Player {i}"] = guessed_val
-    
-    if guess["Player 0"] == guess["Player 1"]:
+def multiplayer_game():
+    guess_results = {}
+    for player_index in range(2):
+        guessed_attempts = play_game()
+        print(f"Player {player_index + 1} Guessed in {guessed_attempts} attempt\n")
+        guess_results[f"Player {player_index}"] = guessed_attempts
+
+    if guess_results["Player 0"] == guess_results["Player 1"]:
         print("Match Draw")
-    elif guess["Player 0"] > guess["Player 1"]:
+    elif guess_results["Player 0"] > guess_results["Player 1"]:
         print("Player 2 Won")
-    elif guess["Player 0"] < guess["Player 1"]:
+    elif guess_results["Player 0"] < guess_results["Player 1"]:
         print("Player 1 Won")
     else:
         print("Something Wrong Happen!")
 
 
-Multiplayer()
+multiplayer_game()

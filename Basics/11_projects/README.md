@@ -1,41 +1,29 @@
-# 11 Projects
+# 🎮 Python Projects
 
-Fun projects to apply your Python skills.
-
-## Files
-
-### Games
-| File | Description |
-|------|-------------|
-| `game_guess_number.py` | Number guessing game |
-| `game_high_score.py` | High score system |
-| `game_rock_paper_scissors.py` | Rock Paper Scissors |
+Build fun games and applications!
 
 ## Projects
 
-### 1. Number Guessing Game
-Guess the random number in minimum attempts.
+| File | Description | Run Command |
+|------|-------------|-------------|
+| `01_guess_number.py` | Guess the number game | `python 01_guess_number.py` |
+| `02_high_score.py` | High score tracker | `python 02_high_score.py` |
+| `03_rock_paper_scissors.py` | Rock-paper-scissors | `python 03_rock_paper_scissors.py` |
 
+## Try Them
+
+### Guess the Number
 ```bash
-python game_guess_number.py
+python 01_guess_number.py
+# Computer picks a number, you guess it!
 ```
 
-### 2. Rock Paper Scissors
-Play against the computer.
-
+### Rock-Paper-Scissors
 ```bash
-python game_rock_paper_scissors.py
+python 03_rock_paper_scissors.py
+# Play against the computer
 ```
 
-### 3. High Score System
-Beat your high score!
+## Next Steps
 
-```bash
-python game_high_score.py
-```
-
-## Tips
-- Try modifying the game logic
-- Add new features
-- Track statistics
-- Create a GUI version
+→ Move to [`12_web/`](../12_web/) for web development!

@@ -1,34 +1,23 @@
-#Write a program to mine a log file and find out whether it contains ‘python’ and if contain then in which line it contain.
+# Write a program to mine a log file and find if it contains 'python' and on which line.
 
-
-with open(f"/Users/dartstorm/Desktop/Github/Python/Basics/logfile.txt","r") as f:
-    data = f.readlines()
-    line = 1
-    for words in data:
-        if("python" in words): 
-            print(f"Line NO : {line}")
+with open("logfile.txt", "r") as log_file:
+    log_lines = log_file.readlines()
+    line_number = 1
+    for line_content in log_lines:
+        if "python" in line_content:
+            print(f"Line No: {line_number}")
             break
-        line+=1
+        line_number += 1
     else:
-        print("Python Is NoT Present in the above Para !")
-        
-    
-        
+        print("Python Is Not Present in the above Para!")
 
-
-
-
-
-
-
-
-# with open(f"/Users/dartstorm/Desktop/Github/Python/Basics/logfile.txt","r") as f:
+# Alternative method (commented):
+# with open("logfile.txt", "r") as f:
 #     data = f.read()
-#     if("python" in data.lower()):
+#     if "python" in data.lower():
 #         print("This Log-File Contains Python")
 #     else:
 #         print("It doesn't Contain Python")
-
 
 """ Sample Log
 [INFO] System started successfully

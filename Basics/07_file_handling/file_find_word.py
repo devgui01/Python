@@ -1,19 +1,12 @@
 """
-1.Write a program to read the text from a given file ‘poems.txt’ and find out
-whether it contains the word ‘twinkle’ if Found count it.
+Read text from 'poems.txt' and find if it contains the word 'twinkle'.
+Count occurrences if found.
 """
 
-with open("/Users/dartstorm/Desktop/Github/Python/Basics/poems.txt") as f:
-    data = f.read().lower()
-    count = data.count("twinkle")
-    if("twinkle" in data):      
-        twinkle = f"Twinkle Found {count} times"
+with open("poems.txt") as file_handle:
+    file_data = file_handle.read().lower()
+    word_count = file_data.count("twinkle")
+    if "twinkle" in file_data:
+        print(f"Twinkle Found {word_count} times")
     else:
-        twinkle = "Twinkle not Found"
-    print(twinkle)
-
-
-
-        
-    
-      
+        print("Twinkle not Found")

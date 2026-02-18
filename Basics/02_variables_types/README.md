@@ -1,34 +1,41 @@
-# 02 Variables & Types
+# 📦 Variables & Data Types
 
-Learn about variables, data types, and operators in Python.
+Learn about variables, operators, and type conversion.
+
+## Topics Covered
+
+- Variables and assignment
+- Data types (int, float, str, bool)
+- Arithmetic operators
+- Comparison operators
+- Type conversion
+- Input validation
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `arithmetic_addition.py` | Basic addition |
-| `average_two_numbers.py` | Calculate average |
-| `convert_celsius_fahrenheit.py` | Temperature conversion |
-| `convert_inches_to_cm.py` | Length conversion |
-| `escape_sequences.py` | Special characters (\t, \n) |
-| `find_remainder_operator.py` | Modulus operator |
-| `global_variable_example.py` | Global variables |
-| `input_type_validation.py` | Type checking input |
-| `operator_greater_than.py` | Comparison operators |
-| `operators_comparison_assignment.py` | All operators |
-| `square_number_input.py` | Square of a number |
-| `typecasting_examples.py` | Type conversion |
-| `typing_union_annotations.py` | Type hints |
+| `01_arithmetic.py` | Basic addition |
+| `02_average.py` | Calculate average |
+| `03_comparison_greater.py` | Compare numbers |
+| `04_modulus_remainder.py` | Find remainder |
+| `05_square_input.py` | Square a number |
+| `06_convert_inches_cm.py` | Unit conversion |
+| `07_global_variable.py` | Global variables |
+| `08_input_validation.py` | Validate input |
+| `09_typecasting.py` | Type conversion |
+| `10_union_types.py` | Union type hints |
+| `11_operators.py` | All operators |
+| `12_celsius_fahrenheit.py` | Temperature conversion |
+| `13_escape_sequences.py` | Special characters |
 
-## Topics Covered
-- Variables
-- Data types (int, float, str, bool)
-- Type casting
-- Operators (arithmetic, comparison, assignment)
-- Type hints
+## Try It
 
-## Quick Start
 ```bash
-python arithmetic_addition.py
-python operators_comparison_assignment.py
+python 01_arithmetic.py
+python 09_typecasting.py
 ```
+
+## Next Steps
+
+→ Move to [`03_control_flow/`](../03_control_flow/) to learn about if/else and loops.

@@ -1,15 +1,12 @@
 """
-Write a program to open three files 1.txt, 2.txt and 3.txt if any these files are not
-present, a message without exiting the program must be printed prompting the same.
+Write a program to open three files 1.txt, 2.txt and 3.txt.
+If any of these files are not present, print a message without exiting.
 """
 
 try:
-    with (open("/Users/dartstorm/Desktop/Github/Python/Basics/1.txt") as a,\
-        open("/Users/dartstorm/Desktop/Github/Python/Basics/2.txt") as b,\
-        open("/Users/dartstorm/Desktop/Github/Python/Basics/3.txt") as c):
-            pass
-    
+    with (open("1.txt") as first_file,
+          open("2.txt") as second_file,
+          open("3.txt") as third_file):
+        pass
 except FileNotFoundError:
-      print(f"\n\t\t\t\t\tFile Not Found\n")
-
-
+    print("\n\t\t\t\t\tFile Not Found\n")

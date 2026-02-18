@@ -1,9 +1,9 @@
 # Write a python function to print multiplication table of a given number.
-def table(n):
-    i = 1
-    while (i<11):
-        print (f"{n} * {i} = {n*i} ")
-        i+=1
+def print_table(number):
+    multiplier = 1
+    while (multiplier < 11):
+        print (f"{number} * {multiplier} = {number * multiplier} ")
+        multiplier += 1
 
 
-table(n=3)
+print_table(number=3)

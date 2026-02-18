@@ -1,32 +1,36 @@
-# 06 Strings
+# 🔤 Strings
 
-Work with text data in Python.
+Work with text and string operations.
+
+## Topics Covered
+
+- String creation
+- String methods
+- Slicing
+- Formatting
+- Replace and join
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `challenge_using_join.py` | Join challenge |
-| `doublespace_challenge.py` | Find double spaces |
-| `greet_user_input.py` | Greet user |
-| `letter_template_replace.py` | Letter template |
-| `sort_student_marks.py` | Sort marks |
-| `string_all_methods.py` | All string methods |
-| `string_format_method.py` | String formatting |
-| `string_slicing_advanced.py` | Advanced slicing |
-| `string_slicing_questions.py` | Slicing practice |
+| `01_greet_input.py` | Greet user |
+| `02_string_methods.py` | All string methods |
+| `03_string_format.py` | Format strings |
+| `04_string_slicing.py` | Slicing advanced |
+| `05_string_slicing_practice.py` | Practice problems |
+| `06_letter_template.py` | Template replacement |
+| `07_doublespace.py` | Find doublespaces |
+| `08_sort_marks.py` | Sort student marks |
+| `09_join_challenge.py` | Join method |
 
-## Topics Covered
-- String creation
-- String methods
-- Slicing
-- Formatting
-- Escape sequences
-- String manipulation
+## Try It
 
-## Quick Start
 ```bash
-python string_all_methods.py
-python string_format_method.py
-python string_slicing_advanced.py
+python 02_string_methods.py
+python 06_letter_template.py
 ```
+
+## Next Steps
+
+→ Move to [`07_file_handling/`](../07_file_handling/) to read/write files.

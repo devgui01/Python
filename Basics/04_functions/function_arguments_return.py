@@ -1,8 +1,8 @@
-#Function With Arguments and Using of Return 
+#Function With Arguments and Using of Return
 
-def avg(a,b,quote):
-    sum = a+b
-    return f"{sum} {quote}"
+def calculate_sum(first_num, second_num, message):
+    total = first_num + second_num
+    return f"{total} {message}"
 
-sum = avg(quote="kidding",a=3,b=4)
-print(sum)
+result = calculate_sum(message="kidding", first_num=3, second_num=4)
+print(result)

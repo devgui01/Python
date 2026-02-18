@@ -1,9 +1,9 @@
 """
-Create a class ‘Pets’ from a class ‘Animals’ and further create a class ‘Dog’ from
-‘Pets’. Add a method ‘bark’ to class ‘Dog’.
+Create a class 'Pets' from a class 'Animals' and further create a class 'Dog' from
+'Pets'. Add a method 'bark' to class 'Dog'.
 """
 
-class Animals():
+class Animals:
     pass
 
 class Pets(Animals):
@@ -12,10 +12,10 @@ class Pets(Animals):
 
 class Dog(Pets):
     # We don't use @staticmethod As we use Self
-    def Bark(self):
-        self.bark = True
-        print(self.bark)
+    def bark(self):
+        self.is_barking = True
+        print(self.is_barking)
 
 
 simbu = Dog()
-simbu.Bark()
+simbu.bark()

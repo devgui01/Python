@@ -3,7 +3,7 @@
 **
 *** for n = 3"""
 
-user = int(input("Enter the Number :"))
-for i in range(1,user+1):
-    print("*" * i,end="")
+size = int(input("Enter the Number :"))
+for row in range(1, size + 1):
+    print("*" * row, end="")
     print("")

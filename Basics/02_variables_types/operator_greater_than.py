@@ -1,3 +1,3 @@
-a = int(input("Enter the Number : "))
-b = int(input("Enter the Number : "))
-print(f"{a} is Greater than {b} : ",a>b)
+first_number = int(input("Enter the Number : "))
+second_number = int(input("Enter the Number : "))
+print(f"{first_number} is Greater than {second_number} : ", first_number > second_number)

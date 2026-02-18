@@ -1,5 +1,5 @@
 #Professional Coding
-class Monster():  # Class definition
+class Monster:  # Class definition
     def __init__(self, power, health, speed):  # Constructor to initialize object
         self._power = power    # Private variable for power
         self._health = health  # Private variable for health
@@ -40,34 +40,34 @@ class Monster():  # Class definition
 
 
 # Creating an object of Monster
-devil = Monster(12, 90, 34)
+devil_monster = Monster(12, 90, 34)
 
 # Accessing values using getters (like variables)
-print(f"Here is Your Health : {devil.Health} Power : {devil.Power} & Speed : {devil.Speed}\nUpdated Data")
+print(f"Here is Your Health : {devil_monster.Health} Power : {devil_monster.Power} & Speed : {devil_monster.Speed}\nUpdated Data")
 
 # Modifying values using setters (with validation)
-devil.Speed = 90
-devil.Health = 98
-devil.Power = 89
+devil_monster.Speed = 90
+devil_monster.Health = 98
+devil_monster.Power = 89
 
 # Accessing updated values using getters
-print(f"Here is Your Health : {devil.Health} Power : {devil.Power} & Speed : {devil.Speed}\n")
+print(f"Here is Your Health : {devil_monster.Health} Power : {devil_monster.Power} & Speed : {devil_monster.Speed}\n")
 
-devil = Monster(12,90,34)
-print(f"Here is Your Health : {devil.Health} Power : {devil.Power} & Speed : {devil.Speed}\nUpdated Data")
-devil.Speed = 90
-devil.Health = 98
-devil.Power = 89
-print(f"Here is Your Health : {devil.Health} Power : {devil.Power} & Speed : {devil.Speed}\n")
+devil_monster = Monster(12, 90, 34)
+print(f"Here is Your Health : {devil_monster.Health} Power : {devil_monster.Power} & Speed : {devil_monster.Speed}\nUpdated Data")
+devil_monster.Speed = 90
+devil_monster.Health = 98
+devil_monster.Power = 89
+print(f"Here is Your Health : {devil_monster.Health} Power : {devil_monster.Power} & Speed : {devil_monster.Speed}\n")
 
 
 
 #Normal Coding
-"""class Monster():
+"""class Monster:
     def __init__(self,Health,Power,Speed):
         self.health = Health
         self.power = Power
         self.speed = Speed
         print(f"Here is Your Health : {Health} Power : {Power} & Speed : {Speed}")
-    
+
 anvil = Monster(12,45,89)"""

@@ -1,32 +1,20 @@
-# 12 Web Development
+# 🌐 Web Development
 
-Build web applications with Flask.
+Introduction to web development with Flask.
 
-## Files
+## What's Inside
 
 | File | Description |
 |------|-------------|
-| `flask_hello_world.py` | Hello World with Flask |
+| `01_flask_hello_world.py` | Your first Flask app |
 
-## Quick Start
+## Run It
 
-### Install Flask
 ```bash
-pip install flask
-```
-
-### Run the Server
-```bash
-python flask_hello_world.py
-```
-
-### Visit
-```
-http://127.0.0.1:5000
+python 01_flask_hello_world.py
+# Open: http://127.0.0.1:5000
 ```
 
 ## Next Steps
-- Learn FastAPI (see `/FastAPI` folder)
-- Build REST APIs (see `/RESTAPI` folder)
-- Add routes and templates
-- Create forms
+
+→ Explore [`fastapi/`](../../fastapi/) for modern REST APIs!

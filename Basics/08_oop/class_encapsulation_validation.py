@@ -16,10 +16,10 @@ Create a class called GameCharacter with:
 
 
 class GameCharacter:
-    def __init__(self, name, level, health):
-        self._name = name      # Private variable for name
-        self._level = level    # Private variable for level
-        self._health = health  # Private variable for health
+    def __init__(self, character_name, character_level, character_health):
+        self._name = character_name      # Private variable for name
+        self._level = character_level    # Private variable for level
+        self._health = character_health  # Private variable for health
 
     @property
     def Name(self):
@@ -56,15 +56,15 @@ class GameCharacter:
 
 
 # Creating an object
-Adam = GameCharacter("Adam", 45, 98)
+adam_character = GameCharacter("Adam", 45, 98)
 
 print("Output")
-print(f"\tName: {Adam.Name}\n\tLevel: {Adam.Level}\n\tHealth: {Adam.Health}\n")
+print(f"\tName: {adam_character.Name}\n\tLevel: {adam_character.Level}\n\tHealth: {adam_character.Health}\n")
 
 print("Updated Output:\n")
 # Trying to set invalid values
-Adam.Name = ""
-Adam.Level = -51
-Adam.Health = -101
+adam_character.Name = ""
+adam_character.Level = -51
+adam_character.Health = -101
 
-print(f"\tName: {Adam.Name}\n\tLevel: {Adam.Level}\n\tHealth: {Adam.Health}\n")
+print(f"\tName: {adam_character.Name}\n\tLevel: {adam_character.Level}\n\tHealth: {adam_character.Health}\n")

@@ -1,20 +1,17 @@
 #Normal
 while True:
-    x = int(input("Enter the Number : "))
-    if x == 3:
-        print(x)
+    user_number = int(input("Enter the Number : "))
+    if user_number == 3:
+        print(user_number)
         break
 
 
 #Using Walrus
-while (x := int(input("Enter the Number : "))) != 3:
+while (user_number := int(input("Enter the Number : "))) != 3:
     continue
-print(x)
+print(user_number)
 
 #Using Walrus Operator
-while (x := int(input("Enter the Number : "))) != 3:
+while (user_number := int(input("Enter the Number : "))) != 3:
     pass
-print(x)
-
-
-
+print(user_number)
