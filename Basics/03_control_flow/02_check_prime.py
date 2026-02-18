@@ -1,17 +1,21 @@
-# Write a program to find whether a given number is prime or not.
-number = int(input("Enter a Number : "))
-if(number <= 0):
+"""
+Prime Number Checker
+Check if a given number is prime or not.
+"""
+import math
+
+number = int(input("Enter a Number: "))
+
+if number <= 1:
     is_prime = False
-elif(number == 2):
+elif number == 2:
     is_prime = True
 else:
     is_prime = True
-    for divisor in range(2, int(number * 0.5) + 1):
-        if((number % divisor) == 0):
+    # Only check up to square root of number for efficiency
+    for divisor in range(2, int(math.sqrt(number)) + 1):
+        if number % divisor == 0:
             is_prime = False
             break
-    if(is_prime):
-        is_prime = False
-    else:
-        is_prime = True
-print(f"Is Prime Number :{is_prime}")
+
+print(f"Is Prime Number: {is_prime}")

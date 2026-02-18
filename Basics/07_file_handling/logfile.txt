@@ -1,0 +1,6 @@
+[INFO] System started successfully
+[WARNING] Low memory detected
+[INFO] User logged in
+[ERROR] Python module failed to load
+[INFO] Retrying operation
+[INFO] System shutting down
