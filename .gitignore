@@ -1,15 +1,218 @@
 # ===========================================
-# Temporary Files & Documentation (Not for tracking)
+# Python Virtual Environments
 # ===========================================
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+virtualenv/
+.pyenv/
 
-# Issue/Project completion docs
+# ===========================================
+# Python Cache & Compiled Files
+# ===========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.so
+
+# ===========================================
+# Build & Distribution
+# ===========================================
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+*.egg
+MANIFEST
+pip-wheel-metadata/
+
+# ===========================================
+# IDE & Editor Files
+# ===========================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# ===========================================
+# Operating System Files
+# ===========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+@eaDir/
+*.cab
+*.msi
+*.msix
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# ===========================================
+# Environment & Configuration
+# ===========================================
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+*.env
+.local.env
+config.local.*
+settings.local.py
+secrets.json
+credentials.json
+*.pem
+*.key
+
+# ===========================================
+# Database Files
+# ===========================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+*.dump
+*.sql
+
+# ===========================================
+# Testing & Coverage
+# ===========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.phantomjs/
+
+# ===========================================
+# myPy & Type Checking
+# ===========================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
+
+# ===========================================
+# Jupyter Notebook
+# ===========================================
+.ipynb_checkpoints
+*.ipynb
+
+# ===========================================
+# Machine Learning & Data Science
+# ===========================================
+*.h5
+*.pkl
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.model
+*.pb
+gpt2/
+models/
+checkpoints/
+
+# ===========================================
+# Large Data Files
+# ===========================================
+data/*.csv
+data/*.json
+data/*.txt
+!data/.gitkeep
+
+# ===========================================
+# Logs & Temporary Files
+# ===========================================
+*.log
+logs/
+tmp/
+temp/
+.tmp/
+.temp/
+temp_files/
+
+# ===========================================
+# Documentation (Auto-generated)
+# ===========================================
 *_COMPLETE.md
 *_ACHIEVED.md
 *_SUMMARY.md
 *_ENHANCED.md
 *_CLEANUP.md
 *_GUIDE.md
-enhance_*.md
+*_ANALYSIS*.md
+*_PLAN*.md
+*_REPORT*.md
+*_REVIEW*.md
 ISSUE_*.md
 CREATE_*.md
 BATCH_*.md
@@ -19,8 +222,11 @@ DUPLICATE_*.md
 250_*.md
 ALL_*.md
 CONTRIBUTOR_*.md
+MANUAL_*.md
 
-# Scripts (bulk operations)
+# ===========================================
+# Scripts (Bulk Operations)
+# ===========================================
 scripts/
 create_*.py
 create_*.sh
@@ -32,42 +238,52 @@ generate_*.py
 issue_*.py
 mass_*.py
 automation_*.py
+*.sh
+!deploy.sh
+!setup.sh
 
-# Logs and outputs
-*.log
-*.txt
-*_log.txt
-issue_*.txt
-/tmp/*.txt
-/tmp/*.sh
-/tmp/*.py
-
-# Analysis files
-*_ANALYSIS*.md
-*_PLAN*.md
-*_REPORT*.md
-*_REVIEW*.md
-
-# Backup files
+# ===========================================
+# Backup Files
+# ===========================================
 *.bak
 *.backup
 *.old
 *~
 
-# Temporary directories
-tmp/
-temp/
-.tmp/
-.temp/
-temp_files/
-temporary/
+# ===========================================
+# Node.js (if used)
+# ===========================================
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
 
-# Shell scripts
-*.sh
-!deploy.sh
-!setup.sh
+# ===========================================
+# Docker
+# ===========================================
+docker-compose.yml
+Dockerfile
+.docker/
 
-# Python automation
-automation/
-tools/bulk_*.py
-tools/generate_*.py
+# ===========================================
+# Git Files
+# ===========================================
+.gitattributes
+.gitignore
+.git/
+
+# ===========================================
+# Misc
+# ===========================================
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+!docs/images/
+!README_images/
+*.zip
+*.tar.gz
+*.rar
+*.7z
