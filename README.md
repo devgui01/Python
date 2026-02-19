@@ -307,9 +307,17 @@ SOFTWARE.
 
 ---
 
-### Made with ❤️ by the Python Learning Community
+### 👥 Our Amazing Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=hackdartstorm/Python)](https://github.com/hackdartstorm/Python/graphs/contributors)
+Thanks to all contributors who make this project possible!
+
+[![Contributors](https://contrib.rocks/image?repo=hackdartstorm/Python&max=100&columns=10)](https://github.com/hackdartstorm/Python/graphs/contributors)
+
+**Want to be here?** [Make your first contribution!](https://github.com/hackdartstorm/Python/issues?q=is%3Aopen+label%3A%22good+first+issue%22)
+
+---
+
+### Made with ❤️ by the Python Learning Community
 
 **Happy Coding! 🐍✨**
 
