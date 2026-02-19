@@ -94,46 +94,56 @@ Thumbs.db
 # Temporary Files & Scripts (Not for tracking)
 # ===========================================
 
-# Issue creation scripts
+# Issue creation scripts (bulk operations)
 create_*.py
 create_*.sh
 scripts/create_*.py
 scripts/generate_*.py
 scripts/bulk_*.py
+scripts/issue_*.py
+scripts/mass_*.py
 
 # Issue logs and outputs
-*.txt
 issue_*.txt
 *_log.txt
 issue_creation_log.txt
 basic_issues_log.txt
 /tmp/*.txt
 /tmp/*.sh
+/tmp/*.py
 
 # Temporary analysis files
 *_ANALYSIS*.md
 *_SUMMARY*.md
 *_PLAN*.md
 *_CLEANUP*.md
+*_REPORT*.md
+*_REVIEW*.md
 ISSUE_*.md
 CREATE_*.md
+BATCH_*.md
 
 # Generated issue files
 .github/ISSUES/NEW_*/
 .github/ISSUES/*_NEW_*.md
 .github/ISSUES/250_*.md
 .github/ISSUES/PROGRAMS/NEW_*/
+.github/*_SUMMARY*.md
+.github/*_ANALYSIS*.md
 
 # Backup files
 *.bak
 *.backup
 *.old
+*~
 
 # Temporary directories
 tmp/
 temp/
 .tmp/
 .temp/
+temp_files/
+temporary/
 
 # Shell scripts for bulk operations
 *.sh
@@ -144,3 +154,148 @@ temp/
 automation/
 tools/bulk_*.py
 tools/generate_*.py
+tools/create_*.py
+
+# ===========================================
+# Contributor/User Non-Essential Files
+# ===========================================
+
+# Issue charts and statistics
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+!docs/images/
+!README_images/
+
+# Generated documentation
+docs/generated/
+docs/build/
+_site/
+
+# Local configuration
+*.local
+*.local.*
+.local.env
+config.local.*
+
+# Test outputs
+test_output/
+outputs/
+results/
+*.out
+*.result
+
+# Debug files
+*.debug
+debug.log
+debug/
+
+# Cache files (additional)
+.cache/
+*.cache
+*.pyc
+.pyo
+
+# Build artifacts
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Distribution / packaging
+*.manifest
+*.spec
+*.egg-info/
+*.egg
+*.zip
+*.tar.gz
+*.rar
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Environments
+*.env
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# pyenv
+.python-version
+
+# IDE specific (additional)
+*.iml
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# macOS (additional)
+.AppleDouble
+.LSOverride
+._*
+
+# Windows (additional)
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+
+# Notes and personal files
+NOTES.md
+notes.md
+TODO.md
+todo.md
+scratch.md
+scratch.py
+
+# Performance profiles
+*.prof
+*.profile
+stats/
+
+# Memory dumps
+*.dmp
+
+# Error reports
+crash.log
+error.log
+errors/
+
+# Temporary data files
+*.tmp
+*.temp
+*.swp
+*.swo
