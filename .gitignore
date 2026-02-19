@@ -89,3 +89,58 @@ data/*.txt
 # OS
 Thumbs.db
 .DS_Store
+
+# ===========================================
+# Temporary Files & Scripts (Not for tracking)
+# ===========================================
+
+# Issue creation scripts
+create_*.py
+create_*.sh
+scripts/create_*.py
+scripts/generate_*.py
+scripts/bulk_*.py
+
+# Issue logs and outputs
+*.txt
+issue_*.txt
+*_log.txt
+issue_creation_log.txt
+basic_issues_log.txt
+/tmp/*.txt
+/tmp/*.sh
+
+# Temporary analysis files
+*_ANALYSIS*.md
+*_SUMMARY*.md
+*_PLAN*.md
+*_CLEANUP*.md
+ISSUE_*.md
+CREATE_*.md
+
+# Generated issue files
+.github/ISSUES/NEW_*/
+.github/ISSUES/*_NEW_*.md
+.github/ISSUES/250_*.md
+.github/ISSUES/PROGRAMS/NEW_*/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Temporary directories
+tmp/
+temp/
+.tmp/
+.temp/
+
+# Shell scripts for bulk operations
+*.sh
+!deploy.sh
+!setup.sh
+
+# Python scripts for automation
+automation/
+tools/bulk_*.py
+tools/generate_*.py
