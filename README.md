@@ -15,229 +15,152 @@ SPDX-License-Identifier: MIT
 [![Issues](https://img.shields.io/github/issues/hackdartstorm/Python?style=flat-square)](https://github.com/hackdartstorm/Python/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/hackdartstorm/Python?style=flat-square)](https://github.com/hackdartstorm/Python/pulls)
 [![Contributors](https://img.shields.io/github/contributors/hackdartstorm/Python?style=flat-square)](https://github.com/hackdartstorm/Python/graphs/contributors)
-[![Last Commit](https://img.shields.io/github/last-commit/hackdartstorm/Python?style=flat-square)](https://github.com/hackdartstorm/Python/commits/main)
 
-### **Master Python with 1000+ Curated Programs • From Beginner to Expert**
+### **700+ Python Programming Issues • From Beginner to Expert**
 
-[Quick Start](#-installation) • [Usage](#-usage) • [Features](#-features) • [Programs](#-program-groups) • [Contributing](#-contributing)
-
-</div>
-
----
-
-## 📝 About
-
-A comprehensive, beginner-friendly Python learning platform with **1000+ curated programs** organized into **19 structured learning groups**. From your first "Hello World" to advanced machine learning models — everything you need to master Python is here.
-
-**✨ Completely bug-free, tested, and production-ready!**
-
----
-
-## 🖼️ What You'll Build
-
-<div align="center">
-
-| Beginner Projects | Intermediate Projects | Advanced Projects |
-|-------------------|----------------------|-------------------|
-| 🎮 Guess the Number | 📊 Data Analyzer | 🤖 ML Models |
-| 📝 To-Do List | 🌐 REST APIs | 🏗️ System Design |
-| 🎲 Rock-Paper-Scissors | 🗄️ Database Apps | 🌐 Distributed Systems |
-| 🔢 Calculator | 🕷️ Web Scrapers | 🧠 Neural Networks |
-
-*Start building real projects from day one!*
+[Quick Start](#-quick-start) • [Issues](#-issues) • [Contributing](#-contributing) • [Code of Conduct](CODE_OF_CONDUCT.md)
 
 </div>
 
 ---
 
-## ✨ Features
+## 📖 About
 
-| Feature | Description |
-|---------|-------------|
-| 🎯 **Structured Learning** | 19 issue groups from beginner to expert level |
-| 📚 **1000+ Programs** | Complete coverage of Python concepts |
-| 🏆 **Achievement System** | Earn badges as you progress through levels |
-| 🤝 **Community-Driven** | Active contributors and supportive community |
-| 📝 **Well-Documented** | Clear explanations with examples for every program |
-| ✅ **Tested Code** | All programs verified and working |
-| 🚀 **Real-World Projects** | Build portfolio-worthy applications |
-| 📊 **Progress Tracking** | Track your learning journey manually or with tools |
+A comprehensive Python learning platform with **700+ curated programming issues** organized by difficulty. From your first "Hello World" to advanced algorithms and system design — everything you need to master Python is here.
+
+**✨ All issues include:**
+- ✅ Detailed problem descriptions
+- ✅ Starter code templates
+- ✅ Test case structures
+- ✅ Progressive hints
+- ✅ Complexity analysis
+- ✅ Resource links
 
 ---
 
-## 📦 Installation
+## 🚀 Quick Start
 
 ### Prerequisites
 
 - ✅ Python 3.10 or higher
-- ✅ Git installed on your computer
-- ✅ A code editor (VS Code recommended)
+- ✅ Git installed
+- ✅ Code editor (VS Code recommended)
 
-### Step-by-Step Installation
+### Installation
 
 ```bash
 # 1. Clone the repository
 git clone https://github.com/hackdartstorm/Python.git
 cd Python
 
-# 2. Create a virtual environment
+# 2. Create virtual environment
 python -m venv venv
 
-# 3. Activate the virtual environment
-# On Windows:
+# 3. Activate virtual environment
+# Windows:
 venv\Scripts\activate
-# On macOS/Linux:
+# macOS/Linux:
 source venv/bin/activate
 
-# 4. Install dependencies (optional, for advanced topics)
+# 4. Install dependencies (optional)
 pip install -r requirements.txt
 ```
 
-### Verify Installation
+### Your First Contribution
 
 ```bash
-# Run your first program
-python basics/01_introduction/01_hello_world.py
+# 1. Browse issues
+# Visit: https://github.com/hackdartstorm/Python/issues
 
-# Expected output:
-# Hello World
+# 2. Fork the repository
+# Click "Fork" button on GitHub
+
+# 3. Clone your fork
+git clone https://github.com/YOUR_USERNAME/Python.git
+cd Python
+
+# 4. Create a branch
+git checkout -b issue-<number>-your-name
+
+# 5. Solve the issue
+# Create your solution in the specified path
+
+# 6. Commit and push
+git add .
+git commit -m "Solve issue #<number>"
+git push origin issue-<number>-your-name
+
+# 7. Create Pull Request
+# Go to GitHub and click "New Pull Request"
 ```
 
 ---
 
-## 🚀 Usage
+## 📊 Issues
 
-### Learning Path Example
+### Issue Distribution
 
-#### Week 1-2: Python Basics
+| Difficulty | Count | Labels |
+|------------|-------|--------|
+| **Beginner** | 200+ | `beginner`, `good first issue` |
+| **Medium** | 400+ | `medium` |
+| **Advanced** | 100+ | `advanced` |
 
-```bash
-# Navigate to beginner examples
-cd basics/01_introduction
+### Browse Issues
 
-# Run programs in order
-python 01_hello_world.py
-python 02_user_input_addition.py
+| Category | Link |
+|----------|------|
+| **All Issues** | [View 700+ Issues](https://github.com/hackdartstorm/Python/issues) |
+| **Beginner Friendly** | [View Beginner Issues](https://github.com/hackdartstorm/Python/issues?q=label%3Abeginner) |
+| **Good First Issues** | [View First Issues](https://github.com/hackdartstorm/Python/issues?q=label%3A%22good+first+issue%22) |
+| **Medium Difficulty** | [View Medium Issues](https://github.com/hackdartstorm/Python/issues?q=label%3Amedium) |
+| **Advanced** | [View Advanced Issues](https://github.com/hackdartstorm/Python/issues?q=label%3Aadvanced) |
 
-# Move to variables
-cd ../02_variables_types
-python 01_arithmetic.py
-python 02_average.py
-```
+### Issue Categories
 
-#### Week 3-4: Data Structures
-
-```bash
-# Work with lists
-cd basics/05_data_structures
-python 01_list_basics.py
-python 09_list_methods.py
-
-# Practice dictionaries
-python 16_dict_basics.py
-```
-
-#### Week 5-8: Projects
-
-```bash
-# Build real projects
-cd basics/11_projects
-
-# Play games you built
-python 01_guess_number.py
-python 03_rock_paper_scissors.py
-```
-
-### Track Your Progress
-
-```bash
-# Option 1: Use a notebook or spreadsheet
-# Option 2: Track with GitHub Issues
-# Option 3: Create your own tracking script
-
-# Example: Create a simple progress file
-echo "#001 - Completed" >> progress.txt
-echo "#002 - Completed" >> progress.txt
-```
-
-### Browse Programs by Level
-
-| Level | Command | Programs |
-|-------|---------|----------|
-| **Beginner** | `cd basics/01_introduction` | 1-100 |
-| **Easy** | `cd basics/05_data_structures` | 101-300 |
-| **Medium** | `cd basics/07_file_handling` | 301-600 |
-| **Hard** | `cd basics/10_advanced` | 601-850 |
-| **Expert** | `cd llm_fundamentals` | 851-1000 |
+| Category | Issues | Topics |
+|----------|--------|--------|
+| **Array Problems** | 150+ | Sorting, searching, manipulation |
+| **String Problems** | 100+ | Manipulation, patterns, parsing |
+| **Dynamic Programming** | 100+ | Optimization, recursion |
+| **Graph Problems** | 80+ | BFS, DFS, shortest path |
+| **Tree Problems** | 70+ | BST, traversal, balancing |
+| **Stack/Queue** | 60+ | Data structures, algorithms |
+| **Hash Table** | 50+ | Dictionaries, sets, mapping |
+| **Math Problems** | 40+ | Number theory, calculations |
 
 ---
 
-## 📁 Program Groups
+## 📁 Project Structure
 
-### Complete Program Catalog
-
-All 1000 programs are organized into 19 issue groups:
-
-| Level | Issues | Programs | Topics |
-|-------|--------|----------|--------|
-| ⭐ **Beginner** | #001-#003 | 1-100 | Input/Output, Numbers, Patterns |
-| ⭐⭐ **Easy** | #004-#007 | 101-300 | Special Numbers, Strings, Lists, Dicts |
-| ⭐⭐⭐ **Medium** | #008-#013 | 301-600 | Files, OOP, Database, API, Scraping, Data |
-| ⭐⭐⭐⭐ **Hard** | #014-#018 | 601-850 | Algorithms, DS, Patterns, System Design, ML |
-| ⭐⭐⭐⭐⭐ **Expert** | #019 | 851-1000 | Distributed Systems, Advanced ML, Production |
-
-**📖 Browse all programs:** [Program Index](.github/ISSUES/PROGRAMS/README.md)
-
----
-
-## 📊 Repository Statistics
-
-<div align="center">
-
-| Metric | Value |
-|--------|-------|
-| **Total Programs** | 1000+ |
-| **Issue Groups** | 19 |
-| **Difficulty Levels** | 5 |
-| **Python Files** | 898 |
-| **Contributors** | [![Contributors](https://img.shields.io/github/contributors/hackdartstorm/Python)](https://github.com/hackdartstorm/Python/graphs/contributors) |
-| **Stars** | [![Stars](https://img.shields.io/github/stars/hackdartstorm/Python?style=social)](https://github.com/hackdartstorm/Python/stargazers) |
-| **Forks** | [![Forks](https://img.shields.io/github/forks/hackdartstorm/Python?style=social)](https://github.com/hackdartstorm/Python/network) |
-
-</div>
-
----
-
-## 🏆 Achievement System
-
-Earn badges as you complete programs!
-
-### Beginner Track
-
-| Badge | Name | Requirement |
-|:-----:|------|-------------|
-| 🌱 | First Steps | Complete Issue #001 |
-| 💯 | Century | Complete 100 programs |
-| 🔢 | Number Wizard | Complete Issues #002, #004 |
-| 📝 | String Expert | Complete Issue #005 |
-
-### Intermediate Track
-
-| Badge | Name | Requirement |
-|:-----:|------|-------------|
-| 📁 | File Handler | Complete Issue #008 |
-| 🗄️ | Database Pro | Complete Issue #010 |
-| 🌐 | API Expert | Complete Issue #011 |
-| 📊 | Data Analyst | Complete Issue #013 |
-
-### Advanced Track
-
-| Badge | Name | Requirement |
-|:-----:|------|-------------|
-| 🧮 | Algorithm Master | Complete Issue #014 |
-| 🏗️ | Architecture Guru | Complete Issues #015, #016 |
-| 🤖 | ML Engineer | Complete Issue #018 |
-| 🏆 | Millennium | Complete all 1000 programs |
+```
+python-learning/
+├── basics/                     # Python fundamentals
+│   ├── 01_introduction/        # Hello World, input/output
+│   ├── 02_variables_types/     # Variables, operators
+│   ├── 03_control_flow/        # If/else, loops
+│   ├── 04_functions/           # Functions, recursion
+│   ├── 05_data_structures/     # Lists, tuples, sets, dicts
+│   ├── 06_strings/             # String operations
+│   ├── 07_file_handling/       # File I/O
+│   ├── 08_oop/                 # Object-Oriented Programming
+│   ├── 09_error_handling/      # Exceptions, try/except
+│   └── 10_advanced/            # Lambda, modules, advanced
+├── fastapi/                    # FastAPI examples
+├── rest_api/                   # Flask REST API
+├── llm_fundamentals/           # LLM from scratch
+├── exercises/                  # Exercise solutions
+├── data/                       # Dataset files
+├── .github/
+│   ├── ISSUE_TEMPLATE/         # Issue templates
+│   └── workflows/              # GitHub Actions
+├── README.md                   # This file
+├── CONTRIBUTING.md             # Contribution guide
+├── CODE_OF_CONDUCT.md          # Community guidelines
+├── CHANGELOG.md                # Version history
+├── SECURITY.md                 # Security policy
+└── requirements.txt            # Dependencies
+```
 
 ---
 
@@ -247,54 +170,47 @@ We welcome contributions of all kinds! Here's how to help:
 
 ### Ways to Contribute
 
-1. **Solve Programs** - Complete issue groups and share solutions
-2. **Add Examples** - Create new program examples
-3. **Improve Docs** - Enhance documentation or fix typos
-4. **Fix Bugs** - Report and fix issues
-5. **Help Others** - Answer questions in discussions
+1. **Solve Issues** - Pick an issue and submit your solution
+2. **Improve Documentation** - Fix typos, add examples
+3. **Create New Issues** - Report bugs or suggest features
+4. **Help Others** - Answer questions in discussions
+5. **Review PRs** - Review and provide feedback
 
 ### Quick Start for Contributors
 
 ```bash
 # 1. Fork the repository
-# Click "Fork" button on GitHub
-
 # 2. Clone your fork
 git clone https://github.com/YOUR_USERNAME/Python.git
 cd Python
 
 # 3. Create a branch
-git checkout -b feature/your-feature-name
+git checkout -b feature/your-feature
 
 # 4. Make your changes
-# Edit files, add programs, fix bugs
-
 # 5. Test your changes
-python your_program.py
-
 # 6. Commit and push
 git add .
 git commit -m "feat: add your feature"
-git push origin feature/your-feature-name
+git push origin feature/your-feature
 
 # 7. Create a Pull Request
-# Go to GitHub and click "New Pull Request"
 ```
 
 ### Contribution Guidelines
 
 - ✅ Follow PEP 8 style guidelines
 - ✅ Add comments explaining your code
-- ✅ Test your programs before submitting
-- ✅ Use descriptive variable names
-- ✅ Include docstrings for functions
+- ✅ Include test cases
+- ✅ Update documentation if needed
+- ✅ Be respectful and inclusive
 
 ### Need Help?
 
 - 📖 [Contributing Guide](CONTRIBUTING.md)
 - 💬 [GitHub Discussions](https://github.com/hackdartstorm/Python/discussions)
 - 🐛 [Report an Issue](https://github.com/hackdartstorm/Python/issues)
-- 📧 [Contact Us](mailto:learn@pythonmastery.dev)
+- 📧 [Contact Maintainers](mailto:learn@pythonmastery.dev)
 
 ---
 
@@ -322,15 +238,13 @@ We pledge to make participation in our community a harassment-free experience fo
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to **conduct@pythonmastery.dev**. All complaints will be reviewed and investigated promptly and fairly.
 
-*Full Code of Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)*
+**Full Code of Conduct:** [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 ---
 
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-<div align="center">
 
 ```
 MIT License
@@ -356,16 +270,32 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-</div>
-
 ---
 
 ## 🙏 Acknowledgments
 
 - **Python Community** - For creating and maintaining Python
 - **All Contributors** - Making this project possible
-- **Open Source** - For the amazing tools and libraries we use
+- **Open Source** - For the amazing tools and libraries
 - **You** - For learning Python and joining our community!
+
+---
+
+## 📞 Support
+
+### Get Help
+
+- 📖 [Documentation](README.md)
+- 💬 [Discussions](https://github.com/hackdartstorm/Python/discussions)
+- 🐛 [Issues](https://github.com/hackdartstorm/Python/issues)
+- 📧 [Email](mailto:learn@pythonmastery.dev)
+
+### Stay Connected
+
+- ⭐ **Star this repo** to show support
+- 🔔 **Watch** for updates
+- 🍴 **Fork** to contribute
+- 📢 **Share** with friends
 
 ---
 
@@ -373,7 +303,7 @@ SOFTWARE.
 
 ## 🎉 Ready to Start Your Python Journey?
 
-### [Browse All Programs](.github/ISSUES/PROGRAMS/README.md) • [Start Contributing](CONTRIBUTING.md) • [Join Community](https://github.com/hackdartstorm/Python/discussions)
+### [Browse 700+ Issues](https://github.com/hackdartstorm/Python/issues) • [Start Contributing](CONTRIBUTING.md) • [Join Community](https://github.com/hackdartstorm/Python/discussions)
 
 ---
 
