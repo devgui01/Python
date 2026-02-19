@@ -149,11 +149,9 @@ python 03_rock_paper_scissors.py
 ### Track Your Progress
 
 ```bash
-# Use the progress tracker
-python tools/progress.py status
-
-# Mark exercises complete
-python tools/progress.py mark 001
+# Create a simple progress tracker
+# Mark completed programs in a notebook or spreadsheet
+# Or use GitHub Issues to track your progress
 ```
 
 ### Browse Programs by Level
