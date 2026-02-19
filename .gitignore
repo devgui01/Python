@@ -1,9 +1,17 @@
-# Python
+# ===========================================
+# Python Core
+# ===========================================
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+*.pyo
+*.pyd
+
+# ===========================================
+# Build & Distribution
+# ===========================================
 build/
 develop-eggs/
 dist/
@@ -19,57 +27,108 @@ wheels/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
-.installed.cfg
 *.egg
-MANIFEST
+*.manifest
+*.spec
+*.zip
+*.tar.gz
+*.rar
 
-# Virtual environments
+# ===========================================
+# Virtual Environments
+# ===========================================
 venv/
 ENV/
 env/
-.venv
+.venv/
+env.bak/
+venv.bak/
+.venv.bak/
 
-# IDE
+# ===========================================
+# IDE & Editors
+# ===========================================
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-.DS_Store
+*.iml
+*.sublime-project
+*.sublime-workspace
+.spyderproject
+.spyproject
+.ropeproject
 
-# Testing
+# ===========================================
+# Testing & Coverage
+# ===========================================
 .pytest_cache/
 .coverage
 htmlcov/
 .tox/
 .nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+test_output/
+outputs/
+results/
+*.out
+*.result
 
-# myPy
+# ===========================================
+# Type Checking
+# ===========================================
 .mypy_cache/
 .dmypy.json
 dmypy.json
 
-# Jupyter Notebook
+# ===========================================
+# Jupyter & Notebooks
+# ===========================================
 .ipynb_checkpoints
+.ipynb
 
-# pyenv
+# ===========================================
+# Python Version & Environment
+# ===========================================
 .python-version
-
-# Environment variables
 .env
 .env.local
 .env.*.local
+.local.env
+config.local.*
+*.local
 
-# Logs
+# ===========================================
+# Logs & Debug
+# ===========================================
 *.log
 logs/
+debug.log
+debug/
+*.debug
+crash.log
+error.log
+errors/
+*.prof
+*.profile
+stats/
+*.dmp
 
+# ===========================================
 # Database
+# ===========================================
 *.db
 *.sqlite
 *.sqlite3
 
-# Machine Learning
+# ===========================================
+# Machine Learning & AI
+# ===========================================
 *.h5
 *.pkl
 *.pth
@@ -80,30 +139,59 @@ logs/
 gpt2/
 models/
 
-# Large data files
+# ===========================================
+# Data Files (Large)
+# ===========================================
 data/*.csv
 data/*.json
 data/*.txt
 !data/.gitkeep
 
-# OS
+# ===========================================
+# OS & System
+# ===========================================
 Thumbs.db
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
 
 # ===========================================
-# Temporary Files & Scripts (Not for tracking)
+# Temporary Files
 # ===========================================
+tmp/
+temp/
+.tmp/
+.temp/
+temp_files/
+temporary/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
 
-# Issue creation scripts (bulk operations)
-create_*.py
-create_*.sh
+# ===========================================
+# Scripts (Bulk Operations - Not for Users)
+# ===========================================
 scripts/create_*.py
 scripts/generate_*.py
 scripts/bulk_*.py
 scripts/issue_*.py
 scripts/mass_*.py
+scripts/automation_*.py
+create_*.py
+create_*.sh
 
-# Issue logs and outputs
+# ===========================================
+# Issue Generation Files (Not for Users)
+# ===========================================
 issue_*.txt
 *_log.txt
 issue_creation_log.txt
@@ -112,7 +200,23 @@ basic_issues_log.txt
 /tmp/*.sh
 /tmp/*.py
 
-# Temporary analysis files
+# ===========================================
+# Documentation (Auto-Generated)
+# ===========================================
+docs/generated/
+docs/build/
+_site/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+!docs/images/
+!README_images/
+
+# ===========================================
+# Analysis & Planning (Internal Use Only)
+# ===========================================
 *_ANALYSIS*.md
 *_SUMMARY*.md
 *_PLAN*.md
@@ -122,180 +226,172 @@ basic_issues_log.txt
 ISSUE_*.md
 CREATE_*.md
 BATCH_*.md
+DUPLICATE_*.md
+FINAL_*.md
+COMPLETE_*.md
+ACHIEVED*.md
 
-# Generated issue files
+# ===========================================
+# GitHub Internal (Not for Tracking)
+# ===========================================
 .github/ISSUES/NEW_*/
 .github/ISSUES/*_NEW_*.md
 .github/ISSUES/250_*.md
 .github/ISSUES/PROGRAMS/NEW_*/
 .github/*_SUMMARY*.md
 .github/*_ANALYSIS*.md
-
-# Backup files
-*.bak
-*.backup
-*.old
-*~
-
-# Temporary directories
-tmp/
-temp/
-.tmp/
-.temp/
-temp_files/
-temporary/
-
-# Shell scripts for bulk operations
-*.sh
-!deploy.sh
-!setup.sh
-
-# Python scripts for automation
-automation/
-tools/bulk_*.py
-tools/generate_*.py
-tools/create_*.py
+.github/workflows/test_*.yml
+.github/workflows/temp_*.yml
 
 # ===========================================
-# Contributor/User Non-Essential Files
+# Notes & Personal Files
 # ===========================================
-
-# Issue charts and statistics
-*.pdf
-*.png
-*.jpg
-*.jpeg
-*.gif
-!docs/images/
-!README_images/
-
-# Generated documentation
-docs/generated/
-docs/build/
-_site/
-
-# Local configuration
-*.local
-*.local.*
-.local.env
-config.local.*
-
-# Test outputs
-test_output/
-outputs/
-results/
-*.out
-*.result
-
-# Debug files
-*.debug
-debug.log
-debug/
-
-# Cache files (additional)
-.cache/
-*.cache
-*.pyc
-.pyo
-
-# Build artifacts
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-
-# Translations
-*.mo
-*.pot
-
-# Distribution / packaging
-*.manifest
-*.spec
-*.egg-info/
-*.egg
-*.zip
-*.tar.gz
-*.rar
-
-# PyInstaller
-*.manifest
-*.spec
-
-# Environments
-*.env
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# pyenv
-.python-version
-
-# IDE specific (additional)
-*.iml
-.idea/
-.vscode/
-*.sublime-project
-*.sublime-workspace
-
-# macOS (additional)
-.AppleDouble
-.LSOverride
-._*
-
-# Windows (additional)
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-*.cab
-*.msi
-*.msix
-
-# Notes and personal files
 NOTES.md
 notes.md
 TODO.md
 todo.md
 scratch.md
 scratch.py
+*.note
+*.notes
 
-# Performance profiles
+# ===========================================
+# Installer & Package Manager
+# ===========================================
+pip-log.txt
+pip-delete-this-directory.txt
+MANIFEST
+.installed.cfg
+
+# ===========================================
+# Translations
+# ===========================================
+*.mo
+*.pot
+
+# ===========================================
+# Cache (Additional)
+# ===========================================
+.cache/
+*.cache
+
+# ===========================================
+# Performance & Profiling
+# ===========================================
 *.prof
 *.profile
-stats/
+profile/
+benchmark/
+benchmarks/
 
-# Memory dumps
+# ===========================================
+# Memory & Dumps
+# ===========================================
 *.dmp
+*.dump
 
-# Error reports
-crash.log
-error.log
-errors/
+# ===========================================
+# Backup & Versioning
+# ===========================================
+*.bak
+*.backup
+*.old
+*~
+*.orig
+*.rej
 
-# Temporary data files
-*.tmp
-*.temp
-*.swp
-*.swo
+# ===========================================
+# Distribution
+# ===========================================
+*.egg-info/
+*.egg
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ===========================================
+# PyInstaller
+# ===========================================
+*.manifest
+*.spec
+
+# ===========================================
+# mkdocs & Documentation Sites
+# ===========================================
+/site
+/mkdocs.yml
+
+# ===========================================
+# Additional Python Artifacts
+# ===========================================
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# ===========================================
+# User-Specific Configuration
+# ===========================================
+*.local
+.local
+config.local
+settings.local
+user_config.py
+local_settings.py
+
+# ===========================================
+# Development Tools
+# ===========================================
+.coverage
+.coveragerc
+.nyc_output/
+.parcel-cache/
+
+# ===========================================
+# Node (if used for frontend)
+# ===========================================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ===========================================
+# Docker (if used)
+# ===========================================
+.docker/
+docker-compose.override.yml
+
+# ===========================================
+# Kubernetes (if used)
+# ===========================================
+*.kube
+.kube/
+
+# ===========================================
+# Secrets & Credentials (CRITICAL)
+# ===========================================
+*.pem
+*.key
+*.crt
+*.secret
+*.credentials
+secrets/
+credentials/
+*.password
+*.passwd
+
+# ===========================================
+# API Keys & Tokens (CRITICAL)
+# ===========================================
+*.token
+*.api_key
+*.apikey
+*.secret_key
+
+# ===========================================
+# Personal Data (CRITICAL)
+# ===========================================
+*.private
+personal/
+private/
