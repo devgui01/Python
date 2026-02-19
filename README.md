@@ -303,13 +303,52 @@ SOFTWARE.
 
 ## 🎉 Ready to Start Your Python Journey?
 
-### [Browse 700+ Issues](https://github.com/hackdartstorm/Python/issues) • [Start Contributing](CONTRIBUTING.md) • [Join Community](https://github.com/hackdartstorm/Python/discussions)
+### [Browse 700+ Issues](https://github.com/hackdartstorm/Python/issues) • [Start Contributing](#-contributing) • [Join Community](https://github.com/hackdartstorm/Python/discussions)
 
 ---
 
-### 👥 Our Amazing Contributors
+## 🤝 Contributing
 
-Thanks to all contributors who make this project possible!
+We welcome contributions of all kinds! Here's how you can help:
+
+### Ways to Contribute
+
+- 🐛 **Fix bugs** - Find and fix issues in the codebase
+- 📝 **Add examples** - Contribute new Python examples
+- 🧪 **Write tests** - Add unit tests for existing code
+- 📖 **Improve docs** - Enhance documentation and explanations
+- 💡 **Suggest features** - Propose new learning modules
+- 🔍 **Review code** - Review pull requests from others
+
+### Quick Contribution Guide
+
+1. **Fork** the repository
+2. **Create** a branch (`git checkout -b feature/your-feature`)
+3. **Make** your changes
+4. **Test** your code
+5. **Commit** (`git commit -m 'Add feature'`)
+6. **Push** (`git push origin feature/your-feature`)
+7. **Open** a Pull Request
+
+📖 **See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.**
+
+---
+
+## 👥 Meet Our Contributors
+
+A huge thank you to everyone who has contributed to making this project better!
+
+### 🌟 Top Contributors
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@hackdartstorm](https://github.com/hackdartstorm) | 124+ |
+| [@Samprithajgowda](https://github.com/Samprithajgowda) | 1+ |
+| [@Rey-han-24](https://github.com/Rey-han-24) | 1+ |
+| [@guerrevg](https://github.com/guerrevg) | 1+ |
+| [@aldomelpignano](https://github.com/aldomelpignano) | 1+ |
+
+### 🎖️ All Contributors
 
 [![Contributors](https://contrib.rocks/image?repo=hackdartstorm/Python&max=100&columns=10)](https://github.com/hackdartstorm/Python/graphs/contributors)
 
