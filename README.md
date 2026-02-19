@@ -16,7 +16,7 @@ SPDX-License-Identifier: MIT
 [![Pull Requests](https://img.shields.io/github/issues-pr/hackdartstorm/Python?style=flat-square)](https://github.com/hackdartstorm/Python/pulls)
 [![Contributors](https://img.shields.io/github/contributors/hackdartstorm/Python?style=flat-square)](https://github.com/hackdartstorm/Python/graphs/contributors)
 
-### **700+ Python Programming Issues • From Beginner to Expert**
+### **800+ Python Programming Issues • From Beginner to Expert**
 
 [Quick Start](#-quick-start) • [Issues](#-issues) • [Contributing](#-contributing) • [Code of Conduct](CODE_OF_CONDUCT.md)
 
